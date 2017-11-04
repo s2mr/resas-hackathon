@@ -20,6 +20,8 @@
 		2E347E8F1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E8E1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift */; };
 		2E347E911FAE175500907633 /* MunicipalityFoundationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E901FAE175500907633 /* MunicipalityFoundationRequest.swift */; };
 		2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */; };
+		2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */; };
+		2E347E971FAE1C7500907633 /* TourismForeignersForFromEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
 		6E3DFB291FAE0A2E004D4A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */; };
 		6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975E911FAD863C0009F1F3 /* RootController.storyboard */; };
@@ -87,6 +89,8 @@
 		2E347E8E1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryPowerForIndustryEntity.swift; sourceTree = "<group>"; };
 		2E347E901FAE175500907633 /* MunicipalityFoundationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalityFoundationRequest.swift; sourceTree = "<group>"; };
 		2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalityFoundationEntity.swift; sourceTree = "<group>"; };
+		2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromRequest.swift; sourceTree = "<group>"; };
+		2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromEntity.swift; sourceTree = "<group>"; };
 		34F4CC94B1FF5F4904093E0F /* Pods-freshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5847A2480DC31544AF83807B /* Pods-freshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A08BCA0193B20874D9D4888 /* Pods-freshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				2E347E821FADEB4700907633 /* PopulationCompositionRequest.swift */,
 				2E347E901FAE175500907633 /* MunicipalityFoundationRequest.swift */,
 				2E347E8C1FAE0DFB00907633 /* IndustryPowerForIndustryRequest.swift */,
+				2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */,
 			);
 			path = Requset;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				6EABAE931FADD9EA00B08F3E /* Genre.swift */,
 				2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */,
 				2E347E8E1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift */,
+				2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -737,6 +743,7 @@
 				2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */,
 				2E347E891FADF4EB00907633 /* APIResult.swift in Sources */,
 				6EABAE8B1FADB25000B08F3E /* GenreViewController.swift in Sources */,
+				2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */,
 				6E975EBD1FAD8BAA0009F1F3 /* RootController.swift in Sources */,
 				6EABAE9C1FADEE8500B08F3E /* QuizViewController.swift in Sources */,
 				6EABAE971FADDAAB00B08F3E /* Utility.swift in Sources */,
@@ -744,6 +751,7 @@
 				6EABAEA11FADEEBC00B08F3E /* AnswerViewController.swift in Sources */,
 				2E347E771FADB84200907633 /* Secret.swift in Sources */,
 				2E347E7D1FADD9D600907633 /* CitiesRequest.swift in Sources */,
+				2E347E971FAE1C7500907633 /* TourismForeignersForFromEntity.swift in Sources */,
 				2E347E811FADDCBB00907633 /* FreshAPIConfiguration.swift in Sources */,
 				2E347E8D1FAE0DFB00907633 /* IndustryPowerForIndustryRequest.swift in Sources */,
 				2E347E7B1FADD8F200907633 /* API.swift in Sources */,
