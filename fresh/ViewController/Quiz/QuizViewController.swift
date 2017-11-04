@@ -25,6 +25,11 @@ class QuizViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.title = UserStatusRepository.shared.selectedGenre?.name
+	}
+	
 	@IBAction func choiceButtonTapped(_ sender: Any) {
 		
 	}
