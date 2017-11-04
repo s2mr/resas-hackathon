@@ -9,6 +9,13 @@
 import Foundation
 import Unbox
 
+enum AnswerID: Int {
+	case A = 1
+	case B = 2
+	case C = 3
+	case D = 4
+}
+
 struct QuizData: Unboxable {
 	var quizzes: [Quizzes]
 	

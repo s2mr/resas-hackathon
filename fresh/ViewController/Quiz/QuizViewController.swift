@@ -8,11 +8,6 @@
 
 import UIKit
 
-let BUTTON_TAG_A = 1
-let BUTTON_TAG_B = 2
-let BUTTON_TAG_C = 3
-let BUTTON_TAG_D = 4
-
 class QuizViewController: UIViewController {
 	
 	@IBOutlet weak var choiceButtonA : UIButton!

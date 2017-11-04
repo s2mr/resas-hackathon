@@ -51,6 +51,16 @@ extension GenreViewController: UICollectionViewDataSource {
 	}
 }
 
+extension GenreViewController: UICollectionViewDelegate {
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let genre = genres[indexPath.row]
+		UserStatusRepository.shared.selectedGenre = genre
+		let vc = UIStoryboard(name: "QuizViewController", bundle: nil).instantiateInitialViewController()!
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+}
+
 extension GenreViewController: UICollectionViewDelegateFlowLayout {
 	// 希望のセルサイズを返す
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
