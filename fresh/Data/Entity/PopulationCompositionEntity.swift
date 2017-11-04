@@ -9,8 +9,6 @@
 import Foundation
 import Unbox
 
-import Unbox
-
 public struct PoplationCompositionEntity : Unboxable {
 	let boundaryYear: Int
 	let data:[PoplationCompositions]
