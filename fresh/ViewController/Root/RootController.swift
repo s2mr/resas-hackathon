@@ -25,7 +25,7 @@ class RootController: UITabBarController {
 		
 		// Do any additional setup after loading the view.
 		let repo = APIRepository()
-		repo.getMunicipalityFoundation(prefCode: 3, cityCode: "-")
+		repo.getTourismForeignersForFrom(year: 2012, prefCode:3, purpose:1)
 			.subscribe {
 				print($0.debugDescription)
 		}
