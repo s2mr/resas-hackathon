@@ -17,7 +17,7 @@
 		2E347E891FADF4EB00907633 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E881FADF4EB00907633 /* APIResult.swift */; };
 		2E347E8B1FADF9F200907633 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E8A1FADF9F200907633 /* APIRepository.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
-		6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */; };
+		6E3DFB291FAE0A2E004D4A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */; };
 		6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975E911FAD863C0009F1F3 /* RootController.storyboard */; };
 		6E975E951FAD863C0009F1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E975E941FAD863C0009F1F3 /* Assets.xcassets */; };
 		6E975E981FAD863C0009F1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975E961FAD863C0009F1F3 /* LaunchScreen.storyboard */; };
@@ -709,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3DFB291FAE0A2E004D4A13 /* AppDelegate.swift in Sources */,
 				2E347E851FADEECF00907633 /* PopulationCompositionEntity.swift in Sources */,
 				2E347E831FADEB4700907633 /* PopulationCompositionRequest.swift in Sources */,
 				6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */,
@@ -724,12 +725,10 @@
 				6E975EBD1FAD8BAA0009F1F3 /* RootController.swift in Sources */,
 				6EABAE9C1FADEE8500B08F3E /* QuizViewController.swift in Sources */,
 				6EABAE971FADDAAB00B08F3E /* Utility.swift in Sources */,
-				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
 				6EABAE901FADB94600B08F3E /* GenreCollectionViewCell.swift in Sources */,
 				6EABAEA11FADEEBC00B08F3E /* AnswerViewController.swift in Sources */,
 				2E347E771FADB84200907633 /* Secret.swift in Sources */,
 				2E347E7D1FADD9D600907633 /* CitiesRequest.swift in Sources */,
-				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
 				2E347E811FADDCBB00907633 /* FreshAPIConfiguration.swift in Sources */,
 				2E347E7B1FADD8F200907633 /* API.swift in Sources */,
 				2E347E7F1FADDAB700907633 /* FreshAPI.swift in Sources */,
