@@ -9,7 +9,14 @@
 import Foundation
 
 class CityRepository {
-	func getCities() {
-		
+	
+	var dataStore: CityDataStore
+	
+	init() {
+		dataStore = CityDataStore()
+	}
+	
+	func getCities() -> Cities {
+		return dataStore.getCities()
 	}
 }

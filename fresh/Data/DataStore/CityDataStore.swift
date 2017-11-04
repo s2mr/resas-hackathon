@@ -21,7 +21,7 @@ class CityDataStore {
 		return jsonStr
 	}
 	
-	func getCities() throws -> Cities {
+	func getCities() -> Cities {
 		let jsonStr = loadJson(name: "iwate")
 		return try! Cities(unboxer: Unboxer(data: jsonStr.data(using: String.Encoding.utf8)!))
 	}
