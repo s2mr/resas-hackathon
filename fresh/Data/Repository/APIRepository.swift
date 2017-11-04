@@ -48,4 +48,13 @@ class APIRepository {
 //				print($0.debugDescription)
 //		}
 	}
+	func getForestryIncomeForContractRevenue(prefCode:Int, cityCode:String) -> Observable<ForestryIncomeForContractRevenueEntity> {
+		return api.send(FreshAPI.ForestryIncomeForContractRevenueRequest(prefCode: prefCode, cityCode: cityCode))
+		
+//		let repo = APIRepository()
+//		repo.getForestryIncomeForContractRevenue(prefCode:3, cityCode:"-")
+//			.subscribe {
+//				print($0.debugDescription)
+//		}
+	}
 }
