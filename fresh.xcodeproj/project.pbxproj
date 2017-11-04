@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		2E347E771FADB84200907633 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E761FADB84200907633 /* Secret.swift */; };
 		2E347E7B1FADD8F200907633 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E7A1FADD8F200907633 /* API.swift */; };
-		2E347E7D1FADD9D600907633 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E7C1FADD9D600907633 /* Cities.swift */; };
+		2E347E7D1FADD9D600907633 /* CitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E7C1FADD9D600907633 /* CitiesRequest.swift */; };
 		2E347E7F1FADDAB700907633 /* FreshAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E7E1FADDAB700907633 /* FreshAPI.swift */; };
 		2E347E811FADDCBB00907633 /* FreshAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E801FADDCBB00907633 /* FreshAPIConfiguration.swift */; };
+		2E347E831FADEB4700907633 /* PopulationCompositionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E821FADEB4700907633 /* PopulationCompositionRequest.swift */; };
+		2E347E851FADEECF00907633 /* PopulationCompositionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E841FADEECF00907633 /* PopulationCompositionEntity.swift */; };
+		2E347E891FADF4EB00907633 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E881FADF4EB00907633 /* APIResult.swift */; };
+		2E347E8B1FADF9F200907633 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E8A1FADF9F200907633 /* APIRepository.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
 		6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */; };
 		6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975E911FAD863C0009F1F3 /* RootController.storyboard */; };
@@ -53,9 +57,13 @@
 		09C27BF80E3658492E920AFE /* Pods_fresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E347E761FADB84200907633 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		2E347E7A1FADD8F200907633 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		2E347E7C1FADD9D600907633 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		2E347E7C1FADD9D600907633 /* CitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRequest.swift; sourceTree = "<group>"; };
 		2E347E7E1FADDAB700907633 /* FreshAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshAPI.swift; sourceTree = "<group>"; };
 		2E347E801FADDCBB00907633 /* FreshAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshAPIConfiguration.swift; sourceTree = "<group>"; };
+		2E347E821FADEB4700907633 /* PopulationCompositionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationCompositionRequest.swift; sourceTree = "<group>"; };
+		2E347E841FADEECF00907633 /* PopulationCompositionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationCompositionEntity.swift; sourceTree = "<group>"; };
+		2E347E881FADF4EB00907633 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		2E347E8A1FADF9F200907633 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		34F4CC94B1FF5F4904093E0F /* Pods-freshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5847A2480DC31544AF83807B /* Pods-freshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A08BCA0193B20874D9D4888 /* Pods-freshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +137,8 @@
 		2E347E791FADD8A400907633 /* Requset */ = {
 			isa = PBXGroup;
 			children = (
-				2E347E7C1FADD9D600907633 /* Cities.swift */,
+				2E347E7C1FADD9D600907633 /* CitiesRequest.swift */,
+				2E347E821FADEB4700907633 /* PopulationCompositionRequest.swift */,
 			);
 			path = Requset;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				6E975ECB1FAD94080009F1F3 /* CityRepository.swift */,
+				2E347E8A1FADF9F200907633 /* APIRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				6EABAE841FADA6DB00B08F3E /* City.swift */,
+				2E347E841FADEECF00907633 /* PopulationCompositionEntity.swift */,
+				2E347E881FADF4EB00907633 /* APIResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -590,17 +602,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E347E851FADEECF00907633 /* PopulationCompositionEntity.swift in Sources */,
+				2E347E831FADEB4700907633 /* PopulationCompositionRequest.swift in Sources */,
 				6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */,
 				6E975EC91FAD8EE00009F1F3 /* ProfileTopViewController.swift in Sources */,
 				6EABAE851FADA6DB00B08F3E /* City.swift in Sources */,
 				6E975EC21FAD8C200009F1F3 /* QuizTopViewController.swift in Sources */,
+				2E347E891FADF4EB00907633 /* APIResult.swift in Sources */,
 				6E975EBD1FAD8BAA0009F1F3 /* RootController.swift in Sources */,
 				2E347E771FADB84200907633 /* Secret.swift in Sources */,
-				2E347E7D1FADD9D600907633 /* Cities.swift in Sources */,
+				2E347E7D1FADD9D600907633 /* CitiesRequest.swift in Sources */,
 				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
 				2E347E811FADDCBB00907633 /* FreshAPIConfiguration.swift in Sources */,
 				2E347E7B1FADD8F200907633 /* API.swift in Sources */,
 				2E347E7F1FADDAB700907633 /* FreshAPI.swift in Sources */,
+				2E347E8B1FADF9F200907633 /* APIRepository.swift in Sources */,
 				6E975ECC1FAD94080009F1F3 /* CityRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
