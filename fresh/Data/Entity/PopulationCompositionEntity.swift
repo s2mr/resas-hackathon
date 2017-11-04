@@ -9,13 +9,35 @@
 import Foundation
 import Unbox
 
-//extension APIResult {
-	public struct PoplationCompositionEntity : Unboxable {
-		let boundaryYear: Int
-		public init(unboxer: Unboxer) throws {
-			boundaryYear = try unboxer.unbox(key: "boundaryYear")
-		}
-		
-	}
-//}
+import Unbox
 
+public struct PoplationCompositionEntity : Unboxable {
+	let boundaryYear: Int
+	let data:[PoplationCompositions]
+	
+	public init(unboxer: Unboxer) throws {
+		boundaryYear = try unboxer.unbox(key: "boundaryYear")
+		data = try unboxer.unbox(key: "data")
+	}
+	
+}
+
+struct PoplationCompositions: Unboxable {
+	var label: String
+	var data: [PoplationComposition]
+	
+	init(unboxer: Unboxer) throws {
+		label = try unboxer.unbox(key: "label")
+		data = try unboxer.unbox(key: "data")
+	}
+}
+
+struct PoplationComposition: Unboxable {
+	var year: Int
+	var value: Int
+	
+	init(unboxer: Unboxer) throws {
+		year = try unboxer.unbox(key: "year")
+		value = try unboxer.unbox(key: "value")
+	}
+}
