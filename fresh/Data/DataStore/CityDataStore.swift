@@ -15,14 +15,10 @@ class CityDataStore {
 		
 	}
 	
-	private func loadJson(name: String) -> String {
-		let path = Bundle.main.path(forResource: name, ofType: "json")
-		let jsonStr = try! String(contentsOfFile: path!)
-		return jsonStr
-	}
+
 	
 	func getCities() -> Cities {
-		let jsonStr = loadJson(name: "iwate")
+		let jsonStr = Utility.loadJson(name: "iwate")
 		return try! Cities(unboxer: Unboxer(data: jsonStr.data(using: String.Encoding.utf8)!))
 	}
 }
