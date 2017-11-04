@@ -18,6 +18,9 @@
 		6E975EC41FAD8C320009F1F3 /* QuizTopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975EC31FAD8C320009F1F3 /* QuizTopViewController.storyboard */; };
 		6E975EC71FAD8ED30009F1F3 /* ProfileTopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E975EC61FAD8ED30009F1F3 /* ProfileTopViewController.storyboard */; };
 		6E975EC91FAD8EE00009F1F3 /* ProfileTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975EC81FAD8EE00009F1F3 /* ProfileTopViewController.swift */; };
+		6E975ECC1FAD94080009F1F3 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975ECB1FAD94080009F1F3 /* CityRepository.swift */; };
+		6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */; };
+		6E975ED11FAD95E70009F1F3 /* iwate.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E975ED01FAD95E70009F1F3 /* iwate.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		6E975EC31FAD8C320009F1F3 /* QuizTopViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizTopViewController.storyboard; sourceTree = "<group>"; };
 		6E975EC61FAD8ED30009F1F3 /* ProfileTopViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileTopViewController.storyboard; sourceTree = "<group>"; };
 		6E975EC81FAD8EE00009F1F3 /* ProfileTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTopViewController.swift; sourceTree = "<group>"; };
+		6E975ECB1FAD94080009F1F3 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataStore.swift; sourceTree = "<group>"; };
+		6E975ED01FAD95E70009F1F3 /* iwate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = iwate.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		6E975E8C1FAD863C0009F1F3 /* fresh */ = {
 			isa = PBXGroup;
 			children = (
+				6E975ECD1FAD949D0009F1F3 /* DataStore */,
+				6E975ECA1FAD93B20009F1F3 /* Repository */,
 				6E975EBB1FAD87420009F1F3 /* ViewController */,
 				6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */,
 				6E975E941FAD863C0009F1F3 /* Assets.xcassets */,
@@ -167,6 +175,23 @@
 				6E975EC81FAD8EE00009F1F3 /* ProfileTopViewController.swift */,
 			);
 			path = ProfileTopViewController;
+			sourceTree = "<group>";
+		};
+		6E975ECA1FAD93B20009F1F3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6E975ECB1FAD94080009F1F3 /* CityRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6E975ECD1FAD949D0009F1F3 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */,
+				6E975ED01FAD95E70009F1F3 /* iwate.json */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +303,7 @@
 			files = (
 				6E975EC41FAD8C320009F1F3 /* QuizTopViewController.storyboard in Resources */,
 				6E975E981FAD863C0009F1F3 /* LaunchScreen.storyboard in Resources */,
+				6E975ED11FAD95E70009F1F3 /* iwate.json in Resources */,
 				6E975E951FAD863C0009F1F3 /* Assets.xcassets in Resources */,
 				6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */,
 				6E975EC71FAD8ED30009F1F3 /* ProfileTopViewController.storyboard in Resources */,
@@ -305,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */,
 				6E975EC91FAD8EE00009F1F3 /* ProfileTopViewController.swift in Sources */,
 				6E975EC21FAD8C200009F1F3 /* QuizTopViewController.swift in Sources */,
 				6E975EBD1FAD8BAA0009F1F3 /* RootController.swift in Sources */,
 				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
+				6E975ECC1FAD94080009F1F3 /* CityRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
