@@ -15,4 +15,7 @@ class APIRepository {
 	func getPopulationComposition(prefCode: Int, cityCode: String) -> Observable<PoplationCompositionEntity> {
 		return api.send(FreshAPI.PopulationCompositionRequest(prefCode: prefCode, cityCode: cityCode))
 	}
+	func getMunicipalityFoundation(prefCode: Int, cityCode: String) -> Observable<MunicipalityFoundationEntity> {
+		return api.send(FreshAPI.MunicipalityFoundationRequest(prefCode: prefCode, cityCode: cityCode))
+	}
 }
