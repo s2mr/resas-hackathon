@@ -24,6 +24,11 @@ class RootController: UITabBarController {
 		self.viewControllers = [UINavigationController(rootViewController: quizTop), profileTop]
 		
 		// Do any additional setup after loading the view.
+		let repo = APIRepository()
+		repo.getMunicipalityFoundation(prefCode: 3, cityCode: "-")
+			.subscribe {
+				print($0.debugDescription)
+		}
 	}
 	
 	override func didReceiveMemoryWarning() {
