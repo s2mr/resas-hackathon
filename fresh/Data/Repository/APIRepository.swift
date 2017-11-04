@@ -48,4 +48,14 @@ class APIRepository {
 //				print($0.debugDescription)
 //		}
 	}
+	func getPopulationSum(prefCode:Int, cityCode:String) -> Observable<PopulationSumEntity> {
+		return api.send(FreshAPI.PopulationSumRequest(prefCode: prefCode, cityCode: cityCode))
+		
+//		let repo = APIRepository()
+//		repo.getPopulationSum(prefCode:3, cityCode:"-")
+//			.subscribe( onNext: { entity in
+//				print("[DEBUG]")
+//				print(entity)
+//			})
+	}
 }

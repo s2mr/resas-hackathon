@@ -14,10 +14,6 @@ public struct MunicipalityFoundationEntity : Unboxable {
 	let prefCode: Int
 	let cityName: String
 	let cityCode: String
-	let sicCode: String
-	let sicName: String
-	let simcCode: String
-	let simcName: String
 	let data:[MunicipalityFoundations]
 	
 	public init(unboxer: Unboxer) throws {
@@ -25,10 +21,6 @@ public struct MunicipalityFoundationEntity : Unboxable {
 		prefCode = try unboxer.unbox(key: "prefCode")
 		cityName = try unboxer.unbox(key: "cityName")
 		cityCode = try unboxer.unbox(key: "cityCode")
-		sicCode = try unboxer.unbox(key: "sicCode")
-		sicName = try unboxer.unbox(key: "sicName")
-		simcCode = try unboxer.unbox(key: "simcCode")
-		simcName = try unboxer.unbox(key: "simcName")
 		data = try unboxer.unbox(key: "data")
 	}
 	
