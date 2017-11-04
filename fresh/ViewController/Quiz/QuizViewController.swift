@@ -8,7 +8,17 @@
 
 import UIKit
 
+let BUTTON_TAG_A = 1
+let BUTTON_TAG_B = 2
+let BUTTON_TAG_C = 3
+let BUTTON_TAG_D = 4
+
 class QuizViewController: UIViewController {
+	
+	@IBOutlet weak var choiceButtonA : UIButton!
+	@IBOutlet weak var choiceButtonB : UIButton!
+	@IBOutlet weak var choiceButtonC : UIButton!
+	@IBOutlet weak var choiceButtonD : UIButton!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -20,15 +30,12 @@ class QuizViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-	// Get the new view controller using segue.destinationViewController.
-	// Pass the selected object to the new view controller.
+	@IBAction func choiceButtonTapped(_ sender: Any) {
+		
 	}
-	*/
+	
+}
+
+extension QuizViewController {
 	
 }
