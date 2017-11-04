@@ -21,7 +21,7 @@ class RootController: UITabBarController {
 		let profileTop = UIStoryboard(name: "ProfileTopViewController", bundle: nil).instantiateInitialViewController()!
 		profileTop.title = "プロフィール"
 		
-		self.viewControllers = [quizTop, profileTop]
+		self.viewControllers = [UINavigationController(rootViewController: quizTop), profileTop]
 		
 		// Do any additional setup after loading the view.
 	}

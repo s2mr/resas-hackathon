@@ -51,5 +51,11 @@ extension QuizTopViewController: UITableViewDataSource {
 		
 		return cell
 	}
+}
 
+extension QuizTopViewController: UITableViewDelegate {
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let vc = UIStoryboard(name: "GenreViewController", bundle: nil).instantiateInitialViewController() as! GenreViewController
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
 }

@@ -28,6 +28,13 @@
 		6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */; };
 		6E975ED11FAD95E70009F1F3 /* iwate.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E975ED01FAD95E70009F1F3 /* iwate.json */; };
 		6EABAE851FADA6DB00B08F3E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE841FADA6DB00B08F3E /* City.swift */; };
+		6EABAE8B1FADB25000B08F3E /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE8A1FADB25000B08F3E /* GenreViewController.swift */; };
+		6EABAE8D1FADB26000B08F3E /* GenreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EABAE8C1FADB26000B08F3E /* GenreViewController.storyboard */; };
+		6EABAE901FADB94600B08F3E /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE8F1FADB94600B08F3E /* GenreCollectionViewCell.swift */; };
+		6EABAE921FADD9BA00B08F3E /* GenreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE911FADD9BA00B08F3E /* GenreRepository.swift */; };
+		6EABAE941FADD9EA00B08F3E /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE931FADD9EA00B08F3E /* Genre.swift */; };
+		6EABAE971FADDAAB00B08F3E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAE961FADDAAB00B08F3E /* Utility.swift */; };
+		6EABAE991FADDB2700B08F3E /* genre.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EABAE981FADDB2700B08F3E /* genre.json */; };
 		8B9488C07F00FA50AEDDF066 /* Pods_fresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C27BF80E3658492E920AFE /* Pods_fresh.framework */; };
 		A4E8BE526C275688EECA56BA /* Pods_freshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38D0942EF9CC55D5409337C /* Pods_freshTests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +87,13 @@
 		6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataStore.swift; sourceTree = "<group>"; };
 		6E975ED01FAD95E70009F1F3 /* iwate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = iwate.json; sourceTree = "<group>"; };
 		6EABAE841FADA6DB00B08F3E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6EABAE8A1FADB25000B08F3E /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
+		6EABAE8C1FADB26000B08F3E /* GenreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenreViewController.storyboard; sourceTree = "<group>"; };
+		6EABAE8F1FADB94600B08F3E /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		6EABAE911FADD9BA00B08F3E /* GenreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreRepository.swift; sourceTree = "<group>"; };
+		6EABAE931FADD9EA00B08F3E /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		6EABAE961FADDAAB00B08F3E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		6EABAE981FADDB2700B08F3E /* genre.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = genre.json; sourceTree = "<group>"; };
 		9405081321D45A6BE03A62E6 /* Pods-fresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fresh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fresh/Pods-fresh.debug.xcconfig"; sourceTree = "<group>"; };
 		AB2412E92778A14C5B2E1B74 /* Pods-freshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BFDE5B06F58B88EE7E2A6810 /* Pods-fresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fresh.release.xcconfig"; path = "Pods/Target Support Files/Pods-fresh/Pods-fresh.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,9 +186,11 @@
 		6E975E8C1FAD863C0009F1F3 /* fresh */ = {
 			isa = PBXGroup;
 			children = (
+				6EABAE951FADDA9D00B08F3E /* Utility */,
 				2E347E761FADB84200907633 /* Secret.swift */,
 				6EABAE861FADA6E100B08F3E /* Data */,
 				6E975EBB1FAD87420009F1F3 /* ViewController */,
+				6EABAE8E1FADB8F700B08F3E /* Cell */,
 				6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */,
 				6E975E941FAD863C0009F1F3 /* Assets.xcassets */,
 				6E975E961FAD863C0009F1F3 /* LaunchScreen.storyboard */,
@@ -204,6 +220,7 @@
 		6E975EBB1FAD87420009F1F3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6EABAE881FADB23600B08F3E /* Genre */,
 				6E975EC51FAD8EBE0009F1F3 /* ProfileTopViewController */,
 				6E975EC01FAD8BF60009F1F3 /* QuizTopViewController */,
 				6E975EBE1FAD8BE70009F1F3 /* Root */,
@@ -242,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				6E975ECB1FAD94080009F1F3 /* CityRepository.swift */,
+				6EABAE911FADD9BA00B08F3E /* GenreRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -251,6 +269,7 @@
 			children = (
 				6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */,
 				6E975ED01FAD95E70009F1F3 /* iwate.json */,
+				6EABAE981FADDB2700B08F3E /* genre.json */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -270,8 +289,34 @@
 			isa = PBXGroup;
 			children = (
 				6EABAE841FADA6DB00B08F3E /* City.swift */,
+				6EABAE931FADD9EA00B08F3E /* Genre.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		6EABAE881FADB23600B08F3E /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				6EABAE8A1FADB25000B08F3E /* GenreViewController.swift */,
+				6EABAE8C1FADB26000B08F3E /* GenreViewController.storyboard */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
+		6EABAE8E1FADB8F700B08F3E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6EABAE8F1FADB94600B08F3E /* GenreCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6EABAE951FADDA9D00B08F3E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6EABAE961FADDAAB00B08F3E /* Utility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		9BBA9503B5E3F72D9616022C /* Frameworks */ = {
@@ -403,6 +448,8 @@
 				6E975EC41FAD8C320009F1F3 /* QuizTopViewController.storyboard in Resources */,
 				6E975E981FAD863C0009F1F3 /* LaunchScreen.storyboard in Resources */,
 				6E975ED11FAD95E70009F1F3 /* iwate.json in Resources */,
+				6EABAE991FADDB2700B08F3E /* genre.json in Resources */,
+				6EABAE8D1FADB26000B08F3E /* GenreViewController.storyboard in Resources */,
 				6E975E951FAD863C0009F1F3 /* Assets.xcassets in Resources */,
 				6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */,
 				6E975EC71FAD8ED30009F1F3 /* ProfileTopViewController.storyboard in Resources */,
@@ -591,10 +638,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */,
+				6EABAE921FADD9BA00B08F3E /* GenreRepository.swift in Sources */,
 				6E975EC91FAD8EE00009F1F3 /* ProfileTopViewController.swift in Sources */,
+				6EABAE941FADD9EA00B08F3E /* Genre.swift in Sources */,
 				6EABAE851FADA6DB00B08F3E /* City.swift in Sources */,
 				6E975EC21FAD8C200009F1F3 /* QuizTopViewController.swift in Sources */,
+				6EABAE8B1FADB25000B08F3E /* GenreViewController.swift in Sources */,
 				6E975EBD1FAD8BAA0009F1F3 /* RootController.swift in Sources */,
+				6EABAE971FADDAAB00B08F3E /* Utility.swift in Sources */,
+				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
+				6EABAE901FADB94600B08F3E /* GenreCollectionViewCell.swift in Sources */,
 				2E347E771FADB84200907633 /* Secret.swift in Sources */,
 				2E347E7D1FADD9D600907633 /* Cities.swift in Sources */,
 				6E975E8E1FAD863C0009F1F3 /* AppDelegate.swift in Sources */,
