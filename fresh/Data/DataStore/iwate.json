@@ -1,0 +1,355 @@
+{
+	"name": "岩手県",
+	"cities": [
+			   {
+			   "name": "盛岡市",
+			   "latitude": "39.4152",
+			   "longitude": "141.0926"
+			   },
+			   {
+			   "name": "宮古市",
+			   "latitude": "39.382",
+			   "longitude": "141.5654"
+			   },
+			   {
+			   "name": "大船渡市",
+			   "latitude": "39.0444",
+			   "longitude": "141.422"
+			   },
+			   {
+			   "name": "水沢市",
+			   "latitude": "39.083",
+			   "longitude": "141.0815"
+			   },
+			   {
+			   "name": "花巻市",
+			   "latitude": "39.231",
+			   "longitude": "141.0657"
+			   },
+			   {
+			   "name": "北上市",
+			   "latitude": "39.1656",
+			   "longitude": "141.064"
+			   },
+			   {
+			   "name": "久慈市",
+			   "latitude": "40.1119",
+			   "longitude": "141.47"
+			   },
+			   {
+			   "name": "遠野市",
+			   "latitude": "39.1929",
+			   "longitude": "141.3158"
+			   },
+			   {
+			   "name": "一関市",
+			   "latitude": "38.5556",
+			   "longitude": "141.0749"
+			   },
+			   {
+			   "name": "陸前高田市",
+			   "latitude": "39.0102",
+			   "longitude": "141.3756"
+			   },
+			   {
+			   "name": "釜石市",
+			   "latitude": "39.163",
+			   "longitude": "141.5302"
+			   },
+			   {
+			   "name": "江刺市",
+			   "latitude": "39.1105",
+			   "longitude": "141.1025"
+			   },
+			   {
+			   "name": "二戸市",
+			   "latitude": "40.1612",
+			   "longitude": "141.1818"
+			   },
+			   {
+			   "name": "岩手郡",
+			   "latitude": "39.501",
+			   "longitude": "140.5848"
+			   },
+			   {
+			   "name": "雫石町",
+			   "latitude": "39.4137",
+			   "longitude": "140.5828"
+			   },
+			   {
+			   "name": "葛巻町",
+			   "latitude": "40.0221",
+			   "longitude": "141.2611"
+			   },
+			   {
+			   "name": "岩手町",
+			   "latitude": "39.581",
+			   "longitude": "141.1248"
+			   },
+			   {
+			   "name": "西根町",
+			   "latitude": "39.5537",
+			   "longitude": "141.0542"
+			   },
+			   {
+			   "name": "滝沢村",
+			   "latitude": "39.4351",
+			   "longitude": "141.0432"
+			   },
+			   {
+			   "name": "松尾村",
+			   "latitude": "39.5648",
+			   "longitude": "141.0358"
+			   },
+			   {
+			   "name": "玉山村",
+			   "latitude": "39.5021",
+			   "longitude": "141.1015"
+			   },
+			   {
+			   "name": "安代町",
+			   "latitude": "40.0614",
+			   "longitude": "141.0258"
+			   },
+			   {
+			   "name": "紫波郡",
+			   "latitude": "39.361",
+			   "longitude": "141.0448"
+			   },
+			   {
+			   "name": "紫波町",
+			   "latitude": "39.332",
+			   "longitude": "141.101"
+			   },
+			   {
+			   "name": "矢巾町",
+			   "latitude": "39.3558",
+			   "longitude": "141.0849"
+			   },
+			   {
+			   "name": "稗貫郡",
+			   "latitude": "39.301",
+			   "longitude": "141.1448"
+			   },
+			   {
+			   "name": "大迫町",
+			   "latitude": "39.2802",
+			   "longitude": "141.1726"
+			   },
+			   {
+			   "name": "石鳥谷町",
+			   "latitude": "39.2818",
+			   "longitude": "141.0849"
+			   },
+			   {
+			   "name": "和賀郡",
+			   "latitude": "39.241",
+			   "longitude": "140.5648"
+			   },
+			   {
+			   "name": "東和町",
+			   "latitude": "39.2322",
+			   "longitude": "141.1344"
+			   },
+			   {
+			   "name": "湯田町",
+			   "latitude": "39.1903",
+			   "longitude": "140.4649"
+			   },
+			   {
+			   "name": "沢内村",
+			   "latitude": "39.2553",
+			   "longitude": "140.4522"
+			   },
+			   {
+			   "name": "胆沢郡",
+			   "latitude": "39.1011",
+			   "longitude": "140.5748"
+			   },
+			   {
+			   "name": "金ヶ崎町",
+			   "latitude": "39.1123",
+			   "longitude": "141.0733"
+			   },
+			   {
+			   "name": "前沢町",
+			   "latitude": "39.0303",
+			   "longitude": "141.0718"
+			   },
+			   {
+			   "name": "胆沢町",
+			   "latitude": "39.0711",
+			   "longitude": "141.0348"
+			   },
+			   {
+			   "name": "衣川村",
+			   "latitude": "39.0207",
+			   "longitude": "141.0358"
+			   },
+			   {
+			   "name": "西磐井郡",
+			   "latitude": "38.5811",
+			   "longitude": "141.1048"
+			   },
+			   {
+			   "name": "花泉町",
+			   "latitude": "38.501",
+			   "longitude": "141.1048"
+			   },
+			   {
+			   "name": "平泉町",
+			   "latitude": "38.591",
+			   "longitude": "141.0648"
+			   },
+			   {
+			   "name": "東磐井郡",
+			   "latitude": "39.051",
+			   "longitude": "141.2248"
+			   },
+			   {
+			   "name": "大東町",
+			   "latitude": "39.01",
+			   "longitude": "141.2341"
+			   },
+			   {
+			   "name": "藤沢町",
+			   "latitude": "38.5116",
+			   "longitude": "141.2117"
+			   },
+			   {
+			   "name": "千厩町",
+			   "latitude": "38.5514",
+			   "longitude": "141.2002"
+			   },
+			   {
+			   "name": "東山町",
+			   "latitude": "38.5937",
+			   "longitude": "141.1518"
+			   },
+			   {
+			   "name": "室根村",
+			   "latitude": "38.5603",
+			   "longitude": "141.2648"
+			   },
+			   {
+			   "name": "川崎村",
+			   "latitude": "38.541",
+			   "longitude": "141.1548"
+			   },
+			   {
+			   "name": "気仙郡",
+			   "latitude": "39.1011",
+			   "longitude": "141.4048"
+			   },
+			   {
+			   "name": "住田町",
+			   "latitude": "39.081",
+			   "longitude": "141.3248"
+			   },
+			   {
+			   "name": "上閉伊郡",
+			   "latitude": "39.241",
+			   "longitude": "141.3748"
+			   },
+			   {
+			   "name": "大槌町",
+			   "latitude": "39.2146",
+			   "longitude": "141.5424"
+			   },
+			   {
+			   "name": "宮守村",
+			   "latitude": "39.2033",
+			   "longitude": "141.2138"
+			   },
+			   {
+			   "name": "下閉伊郡",
+			   "latitude": "39.471",
+			   "longitude": "141.4648"
+			   },
+			   {
+			   "name": "田老町",
+			   "latitude": "39.4422",
+			   "longitude": "141.5817"
+			   },
+			   {
+			   "name": "山田町",
+			   "latitude": "39.2812",
+			   "longitude": "141.5706"
+			   },
+			   {
+			   "name": "岩泉町",
+			   "latitude": "39.5036",
+			   "longitude": "141.4746"
+			   },
+			   {
+			   "name": "田野畑村",
+			   "latitude": "39.5546",
+			   "longitude": "141.5331"
+			   },
+			   {
+			   "name": "普代村",
+			   "latitude": "40.001",
+			   "longitude": "141.5248"
+			   },
+			   {
+			   "name": "新里村",
+			   "latitude": "39.3743",
+			   "longitude": "141.4744"
+			   },
+			   {
+			   "name": "川井村",
+			   "latitude": "39.3622",
+			   "longitude": "141.4052"
+			   },
+			   {
+			   "name": "九戸郡",
+			   "latitude": "40.151",
+			   "longitude": "141.3248"
+			   },
+			   {
+			   "name": "軽米町",
+			   "latitude": "40.191",
+			   "longitude": "141.2748"
+			   },
+			   {
+			   "name": "種市町",
+			   "latitude": "40.2425",
+			   "longitude": "141.43"
+			   },
+			   {
+			   "name": "野田村",
+			   "latitude": "40.0623",
+			   "longitude": "141.4845"
+			   },
+			   {
+			   "name": "山形村",
+			   "latitude": "40.0846",
+			   "longitude": "141.344"
+			   },
+			   {
+			   "name": "大野村",
+			   "latitude": "40.1708",
+			   "longitude": "141.3733"
+			   },
+			   {
+			   "name": "九戸村",
+			   "latitude": "40.1249",
+			   "longitude": "141.2531"
+			   },
+			   {
+			   "name": "二戸郡",
+			   "latitude": "40.091",
+			   "longitude": "141.1148"
+			   },
+			   {
+			   "name": "浄法寺町",
+			   "latitude": "40.1042",
+			   "longitude": "141.0923"
+			   },
+			   {
+			   "name": "一戸町",
+			   "latitude": "40.1231",
+			   "longitude": "141.1729"
+			   }
+			   ]
+}
