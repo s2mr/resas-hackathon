@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireSwiftyJSON (1.0.0):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 3.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SwiftyJSON (3.1.4)
+  - Unbox (2.5.0)
+
+DEPENDENCIES:
+  - AlamofireSwiftyJSON
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - Unbox
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireSwiftyJSON: 78908b766483a28aa5cc90fd191a687467042973
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+
+PODFILE CHECKSUM: d681d6e89beff5a0aaaf56d6c7a4b2d0a7ae5578
+
+COCOAPODS: 1.2.1
