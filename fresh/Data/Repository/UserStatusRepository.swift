@@ -8,9 +8,17 @@
 
 import Foundation
 
-let MAX_QUIZ_COUNT = 5
+public let MAX_QUIZ_COUNT = 2
 
 class UserStatusRepository {
+	var userStatus = UserStatus()
+	static let shared = UserStatusRepository()
+	private init() {
+	}
+	
+}
+
+struct UserStatus{
 	var selectedCity: City?
 	var selectedGenre: Genre?
 	var selectedAnswer: AnswerID?
@@ -18,9 +26,4 @@ class UserStatusRepository {
 	var exp: Int = 0
 	var level: Int = 1
 	var dominateCities: [City] = []
-	
-	static let shared = UserStatusRepository()
-	private init() {
-	}
-	
 }

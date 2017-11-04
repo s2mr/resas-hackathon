@@ -22,6 +22,15 @@ struct QuizData: Unboxable {
 	init(unboxer: Unboxer) throws {
 		quizzes = try unboxer.unbox(keyPath: "datas")
 	}
+	
+	func getQuizzes(by genreId: Int) -> Quizzes? {
+		for quiz in quizzes {
+			if quiz.genreId == genreId {
+				return quiz
+			}
+		}
+		return nil
+	}
 }
 
 struct Quizzes: Unboxable {

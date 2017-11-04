@@ -28,7 +28,7 @@ class GenreViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		self.title = UserStatusRepository.shared.selectedCity?.name
+		self.title = UserStatusRepository.shared.userStatus.selectedCity?.name
 	}
 	
 	
@@ -60,7 +60,7 @@ extension GenreViewController: UICollectionViewDelegate {
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let genre = genres[indexPath.row]
-		UserStatusRepository.shared.selectedGenre = genre
+		UserStatusRepository.shared.userStatus.selectedGenre = genre
 		let vc = UIStoryboard(name: "QuizViewController", bundle: nil).instantiateInitialViewController()!
 		self.navigationController?.pushViewController(vc, animated: true)
 	}

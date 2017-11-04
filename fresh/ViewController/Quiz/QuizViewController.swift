@@ -10,6 +10,8 @@ import UIKit
 
 class QuizViewController: UIViewController {
 	
+	@IBOutlet weak var questionTextView: UITextView!
+	
 	@IBOutlet weak var choiceButtonA : UIButton!
 	@IBOutlet weak var choiceButtonB : UIButton!
 	@IBOutlet weak var choiceButtonC : UIButton!
@@ -27,15 +29,27 @@ class QuizViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		self.title = UserStatusRepository.shared.selectedGenre?.name
+		self.title = UserStatusRepository.shared.userStatus.selectedGenre?.name
+		setupUI()
 	}
 	
 	@IBAction func choiceButtonTapped(_ sender: Any) {
-		
+		viewWillAppear(true) //FIXME
 	}
-	
 }
 
 extension QuizViewController {
-	
+	func setupUI() {
+		if let quiz = QuizRepository().next(userStatus: UserStatusRepository.shared.userStatus) {
+			DispatchQueue.main.async {
+				self.questionTextView.text = quiz.question
+				
+				self.choiceButtonA.setTitle(quiz.answers[0].answer, for: .normal)
+				self.choiceButtonB.setTitle(quiz.answers[1].answer, for: .normal)
+				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
+				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
+			}
+		}
+		
+	}
 }
