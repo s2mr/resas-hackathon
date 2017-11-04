@@ -18,7 +18,7 @@ protocol FreshAPIRespondable: APIRespondable {
 extension FreshAPIRespondable {
     // protocol extension
     var keyPathForResponse: String? {
-        return "data"
+        return "result"
     }
     
     fileprivate func validateResponse(_ json: Any?) throws -> UnboxableDictionary {
