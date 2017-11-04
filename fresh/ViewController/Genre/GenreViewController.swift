@@ -11,11 +11,13 @@ import UIKit
 class GenreViewController: UIViewController {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
+	let genreRepo = GenreRepository()
 	
+	var genres: [Genre] = []
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		genres = genreRepo.getGenres()
 		// Do any additional setup after loading the view.
 	}
 	
@@ -39,13 +41,13 @@ class GenreViewController: UIViewController {
 extension GenreViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! GenreCollectionViewCell
-		cell.image.image = UIImage(named: "genre-yama")
-		cell.nameLabel.text = "山"
+		cell.image.image = UIImage(named: genres[indexPath.row].getImageName())
+		cell.nameLabel.text = genres[indexPath.row].name
 		return cell
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 3
+		return genres.count
 	}
 }
 

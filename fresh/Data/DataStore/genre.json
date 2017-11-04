@@ -7,6 +7,14 @@
 			  {
 			  "name":"山",
 			  "file-name": "yama"
-			  }
+			  },
+			  {
+			  "name":"まちづくり",
+			  "file-name": "machidukuri"
+			  },
+			  {
+			  "name":"地方財政",
+			  "file-name": "chihozaisei"
+			  },
 			  ]
 }

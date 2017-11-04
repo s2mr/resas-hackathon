@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Unbox
 
 class GenreRepository {
-//	func getGenres() -> [Genre] {
-//		
-////		Genre(unboxer: <#T##Unboxer#>)
-//	}
+	func getGenres() -> [Genre] {
+		let jsonStr = Utility.loadJson(name: "genre")
+		return try! Genres(unboxer: Unboxer(data: jsonStr.data(using: String.Encoding.utf8)!)).genres
+	}
 }
