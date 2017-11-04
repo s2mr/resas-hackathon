@@ -9,6 +9,24 @@
 import Foundation
 import Unbox
 
+struct QuizData: Unboxable {
+	var quizzes: [Quizzes]
+	
+	init(unboxer: Unboxer) throws {
+		quizzes = try unboxer.unbox(keyPath: "datas")
+	}
+}
+
+struct Quizzes: Unboxable {
+	var genreId: Int
+	var quizzes: [Quiz]
+	
+	init(unboxer: Unboxer) throws {
+		genreId = try unboxer.unbox(key: "genreId")
+		quizzes = try unboxer.unbox(key: "problems")
+	}
+}
+
 struct Quiz: Unboxable {
 	var question: String
 	var answers: [Answer]
