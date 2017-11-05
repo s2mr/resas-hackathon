@@ -22,12 +22,11 @@
 		2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */; };
 		2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */; };
 		2E347E971FAE1C7500907633 /* TourismForeignersForFromEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */; };
-		2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */; };
-		2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */; };
-		2E59BB161FAE2D9B0011E595 /* PopulationSumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */; };
-		2E59BB181FAE2E0B0011E595 /* PopulationSumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */; };
 		2E557FF51FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF41FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift */; };
 		2E557FF71FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF61FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift */; };
+		2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */; };
+		2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */; };
+		2E557FFF1FAEF1C200B0F019 /* quizStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E557FFE1FAEF1C200B0F019 /* quizStub.json */; };
 		2E59BB161FAE2D9B0011E595 /* PopulationSumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */; };
 		2E59BB181FAE2E0B0011E595 /* PopulationSumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
@@ -107,12 +106,11 @@
 		2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalityFoundationEntity.swift; sourceTree = "<group>"; };
 		2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromRequest.swift; sourceTree = "<group>"; };
 		2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromEntity.swift; sourceTree = "<group>"; };
-		2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationRequest.swift; sourceTree = "<group>"; };
-		2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationEntity.swift; sourceTree = "<group>"; };
-		2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumRequest.swift; sourceTree = "<group>"; };
-		2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumEntity.swift; sourceTree = "<group>"; };
 		2E557FF41FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestryIncomeForContractRevenueRequest.swift; sourceTree = "<group>"; };
 		2E557FF61FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestryIncomeForContractRevenueEntity.swift; sourceTree = "<group>"; };
+		2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationRequest.swift; sourceTree = "<group>"; };
+		2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationEntity.swift; sourceTree = "<group>"; };
+		2E557FFE1FAEF1C200B0F019 /* quizStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quizStub.json; sourceTree = "<group>"; };
 		2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumRequest.swift; sourceTree = "<group>"; };
 		2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumEntity.swift; sourceTree = "<group>"; };
 		34F4CC94B1FF5F4904093E0F /* Pods-freshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -377,6 +375,7 @@
 		6E975ECD1FAD949D0009F1F3 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				2E557FFE1FAEF1C200B0F019 /* quizStub.json */,
 				6E975ECE1FAD94AC0009F1F3 /* CityDataStore.swift */,
 				6E975ED01FAD95E70009F1F3 /* iwate.json */,
 				6EABAE981FADDB2700B08F3E /* genre.json */,
@@ -613,6 +612,7 @@
 				6E975E951FAD863C0009F1F3 /* Assets.xcassets in Resources */,
 				6E1FF4541FAEAC0E00008B01 /* WrongAnswerView.xib in Resources */,
 				6E3DFB2F1FAE12A4004D4A13 /* quiz.json in Resources */,
+				2E557FFF1FAEF1C200B0F019 /* quizStub.json in Resources */,
 				6E1FF4581FAEAC2E00008B01 /* CollectAnswerView.xib in Resources */,
 				6E975E931FAD863C0009F1F3 /* RootController.storyboard in Resources */,
 				6E975EC71FAD8ED30009F1F3 /* ProfileTopViewController.storyboard in Resources */,
