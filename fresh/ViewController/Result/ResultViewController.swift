@@ -41,8 +41,7 @@ class ResultViewController: UIViewController {
 		
 		// レベル
 		let level:Int = UserStatusRepository.shared.userStatus.level
-//		let exp:Int = UserStatusRepository.shared.userStatus.exp
-		let exp = 3
+		let exp:Int = UserStatusRepository.shared.userStatus.exp
 		let nextLevelExp = UserStatusRepository.shared.userStatus.getNextLevelExp()
 		levelValueLabel.text = "\(level)"
 		levelProgressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
