@@ -23,6 +23,7 @@ struct UserStatus{
 	var selectedGenre: Genre?
 	var selectedAnswer: AnswerID?
 	var quizIndex: Int = 0
+	var quiz: Quiz?
 	var exp: Int = 0
 	var level: Int = 1
 	var dominateCities: [City] = []
