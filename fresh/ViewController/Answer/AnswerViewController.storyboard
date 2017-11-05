@@ -41,7 +41,9 @@
                                     <constraint firstAttribute="width" constant="100" id="Ksm-Fi-ESr"/>
                                     <constraint firstAttribute="height" constant="30" id="oh8-yX-pVP"/>
                                 </constraints>
-                                <state key="normal" title="次の問題"/>
+                                <state key="normal" title="次の問題">
+                                    <color key="titleColor" red="0.015686274509803921" green="0.15294117647058825" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="nextQuestionButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="8XG-4e-3Kr"/>
                                 </connections>
