@@ -19,6 +19,28 @@
 			  "id": 4,
 			  "name":"地方財政",
 			  "file-name": "chihozaisei"
+			  },
+			  {
+			  "id": 5,
+			  "name":"観光",
+			  "file-name": "kankou"
+			  },
+			  {
+			  "id": 6,
+			  "name":"経済循環",
+			  "file-name": "keizaijunkan"
+			  }
+			  ,
+			  {
+			  "id": 7,
+			  "name":"企業活動",
+			  "file-name": "kigyou_katsudo"
+			  }
+			  ,
+			  {
+			  "id": 8,
+			  "name":"産業",
+			  "file-name": "sangyou"
 			  }
 			  ]
 }
