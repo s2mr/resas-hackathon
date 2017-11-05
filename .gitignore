@@ -39,3 +39,5 @@ xcuserdata/
 Secret.swift
 
 /Pods
+.DS_Store
+
