@@ -21,11 +21,16 @@ class ResultViewController: UIViewController {
 	@IBOutlet weak var levelProgressView: UIProgressView!
 	@IBOutlet weak var levelProgressValueLabel: UILabel!
 	
+	@IBOutlet weak var correctCountLabel: UILabel!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.navigationItem.title = "集計"
 		
+		// 正解数
+		correctCountLabel.text = "\(Int(2)) / \(Int(3))"
+		
+		// 市ごとの進捗度
 		progressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
 		progressView.setProgress(0.5, animated: true)
 		progressLabel.text = "\(Int(progressView.progress * 100))%"
