@@ -36,6 +36,9 @@ class GenreViewController: UIViewController {
 		UserStatusRepository.shared.userStatus.quizIndex = 0
 		UserStatusRepository.shared.userStatus.numberOfProblemsSolved = 0
 		UserStatusRepository.shared.userStatus.numberOfproblemsCorrected = 0
+		
+		//FIXME
+		print(QuizRepository.shared.quizData)
 	}
 	
 	@IBAction func toResultButtonTapped(_ sender: Any) {

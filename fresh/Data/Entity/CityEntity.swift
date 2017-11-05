@@ -18,7 +18,7 @@ public struct CitiesEntity : Unboxable {
 }
 
 struct CityEntity: Unboxable {
-	var prefCode: Int
+	var prefCode: String
 	var cityCode: String
 	var cityName: String
 	var bigCityFlag: Int

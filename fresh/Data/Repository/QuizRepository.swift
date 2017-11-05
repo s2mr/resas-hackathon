@@ -11,14 +11,10 @@ import Unbox
 
 class QuizRepository {
 	var quizData: QuizData?
+	static var shared = QuizRepository()
 	
-	init() {
-		let jsonStr = Utility.loadJson(name: "quiz")
-		do {
-			quizData = try QuizData(unboxer: Unboxer(data: jsonStr.data(using: .utf8)!))
-		} catch {
-			print(error)
-		}
+	private init() {
+		prepareQuiz()
 	}
 	
 	func next(userStatus: UserStatus) -> Quiz? {
@@ -31,6 +27,34 @@ class QuizRepository {
 		}
 		
 		return nil
+	}
+	
+	private func prepareQuiz() {
+		let apiRepo = APIRepository()
+		
+		let jsonStr = Utility.loadJson(name: "quiz")
+		do {
+			quizData = try QuizData(unboxer: Unboxer(data: jsonStr.data(using: .utf8)!))
+		} catch {
+			print(error)
+		}
+		
+		let genre = UserStatusRepository.shared.userStatus.selectedGenre
+		let city = UserStatusRepository.shared.userStatus.selectedCity
+		switch genre!.id {
+		case 1:
+			apiRepo.getPopulationComposition(prefCode: 3, cityCode: city!.prefCode)
+				.subscribe(onNext: { peEntity in
+					print("[DEBUG]")
+					print(peEntity)
+				})
+			
+		case 8:
+			apiRepo.getMunicipalityFoundation(prefCode: 3, cityCode: city!.prefCode)
+		default:
+			print()
+		}
+		
 	}
 	
 	

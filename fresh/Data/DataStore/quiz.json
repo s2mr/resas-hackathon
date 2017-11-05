@@ -1,89 +1,27 @@
 {
 	"datas": [{
-		  "genreId": 1,
-		  "problems": [{
-					   "question": "q1",
-					   "answers": [{
-								   "answer": "q1a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   },
-					   {
-					   "question": "q2",
-					   "answers": [{
-								   "answer": "q2a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   }
-					   ]
-		  }, {
-		  "genreId": 2,
-		  "problems": [{
-					   "question": "q1",
-					   "answers": [{
-								   "answer": "a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   },
-					   {
-					   "question": "q2",
-					   "answers": [{
-								   "answer": "a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   }
-					   ]
-		  }]
+			  "genreId": 1,
+			  "questions": [
+							"aa",
+							"bb",
+							"cc",
+							"dd",
+							
+							]
+			  },
+			  {
+			  "genreId": 2,
+			  "questions": [
+							"aa",
+							"bb"
+							]
+			  },
+			  {
+			  "genreId": 3,
+			  "questions": [
+							"aa",
+							"bb"
+							]
+			  }
+			  ]
 }

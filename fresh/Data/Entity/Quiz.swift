@@ -35,22 +35,23 @@ struct QuizData: Unboxable {
 
 struct Quizzes: Unboxable {
 	var genreId: Int
-	var quizzes: [Quiz]
+	var quizzes: [Quiz] = []
 	
 	init(unboxer: Unboxer) throws {
 		genreId = try unboxer.unbox(key: "genreId")
-		quizzes = try unboxer.unbox(key: "problems")
+		
+		let questions: [String] = try unboxer.unbox(key: "questions")
+		
+		for q in questions {
+			let quiz = Quiz(question: q, answers: [])
+			quizzes.append(quiz)
+		}
 	}
 }
 
-struct Quiz: Unboxable {
+struct Quiz {
 	var question: String
 	var answers: [Answer]
-	
-	init(unboxer: Unboxer) throws {
-		question = try unboxer.unbox(key: "question")
-		answers = try unboxer.unbox(key: "answers")
-	}
 	
 	func collectAnswer() -> Answer {
 		var answer: Answer!

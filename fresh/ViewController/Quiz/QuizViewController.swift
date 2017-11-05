@@ -42,16 +42,20 @@ class QuizViewController: UIViewController {
 
 extension QuizViewController {
 	func setupUI() {
-		if let quiz = QuizRepository().next(userStatus: UserStatusRepository.shared.userStatus) {
+		if let quiz = QuizRepository.shared.next(userStatus: UserStatusRepository.shared.userStatus) {
 			UserStatusRepository.shared.userStatus.quiz = quiz
 			UserStatusRepository.shared.userStatus.numberOfProblemsSolved += 1
 			DispatchQueue.main.async {
 				self.questionTextView.text = quiz.question
+
 				
+				//FIXME:
+				/*
 				self.choiceButtonA.setTitle(quiz.answers[0].answer, for: .normal)
 				self.choiceButtonB.setTitle(quiz.answers[1].answer, for: .normal)
 				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
 				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
+*/
 			}
 		} else {
 			let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
