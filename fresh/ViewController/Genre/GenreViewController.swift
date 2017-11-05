@@ -35,6 +35,13 @@ class GenreViewController: UIViewController {
 		super.viewWillDisappear(animated)
 	}
 	
+	@IBAction func toResultButtonTapped(_ sender: Any) {
+		let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
+		
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	
 	
 	/*
 	// MARK: - Navigation

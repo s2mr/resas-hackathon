@@ -27,4 +27,8 @@ struct UserStatus{
 	var exp: Int = 0
 	var level: Int = 1
 	var dominateCities: [City] = []
+	
+	func getNextLevelExp() -> Int {
+		return level * 10
+	}
 }
