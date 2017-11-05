@@ -27,12 +27,12 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 		self.navigationItem.title = "集計"
 		
-		let quizCount = QuizRepository().quizData?.quizzes.count
-		let numberOfProblemsSolved = QuizRepository().numberOfProblemsSolved // 解いた問題数
-		let numberOfproblemsCorrected = QuizRepository().numberOfproblemsCorrected // 正解した問題数
+//		let quizCount = QuizRepository().quizData?.quizzes.count
+		let _numberOfProblemsSolved = UserStatusRepository.shared.userStatus.numberOfProblemsSolved // 解いた問題数
+		let _numberOfproblemsCorrected = UserStatusRepository.shared.userStatus.numberOfproblemsCorrected // 正解した問題数
 		
 		// 正解数
-		correctCountLabel.text = "\(numberOfproblemsCorrected) / \(numberOfProblemsSolved)"
+		correctCountLabel.text = "\(_numberOfproblemsCorrected) / \(_numberOfProblemsSolved)"
 		
 		// 市ごとの進捗度
 		progressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
