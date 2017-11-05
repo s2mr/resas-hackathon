@@ -56,12 +56,18 @@ extension AnswerViewController {
 		
 		if quiz!.answers[selectedAnswer!.rawValue].collectFlag {
 			//正解の場合
-			let view = CollectAnswerView(frame: self.customView.frame)
+			let view = CollectAnswerView(frame: CGRect(x: 0,
+			                                           y: 0,
+			                                           width: self.customView.frame.width,
+			                                           height: self.customView.frame.height))
 			view.collectAnswerLabel.text = quiz?.collectAnswer().answer
 			self.customView.addSubview(view)
 		} else {
 			//不正解の場合
-			let view = WrongAnswerView(frame: self.customView.frame)
+			let view = WrongAnswerView(frame: CGRect(x: 0,
+			                                         y: 0,
+			                                         width: self.customView.frame.width,
+			                                         height: self.customView.frame.height))
 			view.collectAnswerLabel.text = quiz?.collectAnswer().answer
 			view.selectedAnswerLabel.text = quiz?.answers[selectedAnswer!.rawValue].answer
 			self.customView.addSubview(view)

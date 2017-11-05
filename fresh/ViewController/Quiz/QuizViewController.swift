@@ -52,6 +52,9 @@ extension QuizViewController {
 				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
 				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
 			}
+		} else {
+			let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
+			self.navigationController?.pushViewController(vc, animated: true)
 		}
 		
 	}
