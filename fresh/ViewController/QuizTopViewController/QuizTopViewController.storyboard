@@ -4,12 +4,12 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Quiz Top View Controller-->
+        <!--クイズ-->
         <scene sceneID="Wue-Gs-i8R">
             <objects>
                 <viewController storyboardIdentifier="QuizTopViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wIm-s2-Tsd" customClass="QuizTopViewController" customModule="fresh" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oUe-yH-bDx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ZMX-OY-GnU">
@@ -46,6 +46,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WIu-uz-tGK"/>
                     </view>
+                    <tabBarItem key="tabBarItem" tag="8" title="クイズ" largeContentSizeImage="Q(resize)" selectedImage="Q(resize)" id="vhf-G5-Idt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="oUe-yH-bDx" id="4th-9U-Wvw"/>
                     </connections>
@@ -55,4 +57,7 @@
             <point key="canvasLocation" x="206" y="169"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Q(resize)" width="30" height="38"/>
+    </resources>
 </document>

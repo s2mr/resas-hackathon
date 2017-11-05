@@ -17,10 +17,12 @@ class RootController: UITabBarController {
 		
 		let quizTop = UIStoryboard(name: "QuizTopViewController", bundle: nil).instantiateInitialViewController()!
 		quizTop.title = "クイズ"
+        
 		
 		let profileTop = UIStoryboard(name: "ProfileTopViewController", bundle: nil).instantiateInitialViewController()!
 		profileTop.title = "プロフィール"
 		
+        
 		self.viewControllers = [UINavigationController(rootViewController: quizTop), profileTop]
 		
 		// Do any additional setup after loading the view.

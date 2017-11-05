@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Top View Controller-->
+        <!--profile-->
         <scene sceneID="vsX-KA-x3S">
             <objects>
                 <viewController id="TSA-Mi-HX1" customClass="ProfileTopViewController" customModule="fresh" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,10 +19,15 @@
                         <color key="backgroundColor" red="0.10763505846261978" green="0.74927479028701782" blue="0.072715975344181061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vIW-GW-Nop"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="profile" selectedImage="Top_Profile(resize)" id="iq4-ev-abp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rv8-e1-Kwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9" y="-18"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Top_Profile(resize)" width="30" height="38"/>
+    </resources>
 </document>
