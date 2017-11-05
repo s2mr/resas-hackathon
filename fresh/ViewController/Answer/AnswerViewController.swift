@@ -61,6 +61,7 @@ extension AnswerViewController {
 			                                           width: self.customView.frame.width,
 			                                           height: self.customView.frame.height))
 			view.collectAnswerLabel.text = quiz?.collectAnswer().answer
+			UserStatusRepository.shared.userStatus.numberOfproblemsCorrected += 1
 			self.customView.addSubview(view)
 		} else {
 			//不正解の場合

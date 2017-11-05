@@ -33,6 +33,9 @@ class GenreViewController: UIViewController {
 	
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
+		UserStatusRepository.shared.userStatus.quizIndex = 0
+		UserStatusRepository.shared.userStatus.numberOfProblemsSolved = 0
+		UserStatusRepository.shared.userStatus.numberOfproblemsCorrected = 0
 	}
 	
 	@IBAction func toResultButtonTapped(_ sender: Any) {
