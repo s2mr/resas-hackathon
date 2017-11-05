@@ -38,6 +38,7 @@ class GenreViewController: UIViewController {
 		UserStatusRepository.shared.userStatus.numberOfproblemsCorrected = 0
 		
 		//FIXME
+		print("GenreViewController::viewWillDissaper")
 		print(QuizRepository.shared.quizData)
 	}
 	

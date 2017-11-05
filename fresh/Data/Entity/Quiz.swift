@@ -17,7 +17,7 @@ enum AnswerID: Int {
 }
 
 struct QuizData: Unboxable {
-	var quizzes: [Quizzes]
+	var quizzes: [Quizzes] = []
 	
 	init(unboxer: Unboxer) throws {
 		quizzes = try unboxer.unbox(keyPath: "datas")
@@ -30,6 +30,18 @@ struct QuizData: Unboxable {
 			}
 		}
 		return nil
+	}
+	
+	mutating func addAnswersToQuiz(genreId: Int, quizIndex: Int, answers: [Answer]) {
+		var quiz: Quizzes!
+		for (i,q) in self.quizzes.enumerated() {
+			if q.genreId == genreId {
+				quiz = q
+				self.quizzes.remove(at: i)
+			}
+		}
+		quiz.quizzes[quizIndex].answers = answers
+		self.quizzes.append(quiz)
 	}
 }
 
@@ -71,5 +83,10 @@ struct Answer: Unboxable {
 	init(unboxer: Unboxer) throws {
 		answer = try unboxer.unbox(key: "answer")
 		collectFlag = try unboxer.unbox(key: "collectFlag")
+	}
+	
+	init(answer: String, collectFlag: Bool) {
+		self.answer = answer
+		self.collectFlag = collectFlag
 	}
 }

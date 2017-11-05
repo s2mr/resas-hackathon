@@ -13,6 +13,7 @@ import Unbox
 class APIRepository {
 	let api = FreshAPI()
 	
+	//市区町村
 	func getCities(prefCode: Int) -> Observable<CitiesEntity> {
 		return api.send(FreshAPI.CitiesRequest(prefCode: prefCode))
 	}

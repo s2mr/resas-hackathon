@@ -50,9 +50,9 @@ extension QuizViewController {
 
 				
 				//FIXME:
-				/*
-				self.choiceButtonA.setTitle(quiz.answers[0].answer, for: .normal)
-				self.choiceButtonB.setTitle(quiz.answers[1].answer, for: .normal)
+				
+//				self.choiceButtonA.setTitle(quiz.answers[0].answer, for: .normal)
+				/*self.choiceButtonB.setTitle(quiz.answers[1].answer, for: .normal)
 				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
 				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
 */

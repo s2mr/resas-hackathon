@@ -38,17 +38,24 @@ class QuizRepository {
 		} catch {
 			print(error)
 		}
-		
+		print("QuizRepository")
 		let genre = UserStatusRepository.shared.userStatus.selectedGenre
 		let city = UserStatusRepository.shared.userStatus.selectedCity
+		
 		switch genre!.id {
 		case 1:
-			apiRepo.getPopulationComposition(prefCode: 3, cityCode: city!.prefCode)
-				.subscribe(onNext: { peEntity in
+			apiRepo.getPopulationComposition(prefCode: 3, cityCode: city!.cityCode)
+				.subscribe(
+					onNext: { peEntity in
 					print("[DEBUG]")
 					print(peEntity)
+						
+						let answers:[Answer] = [Answer(answer: peEntity.boundaryYear.description, collectFlag: true),
+						                        Answer(answer: "", collectFlag: false),
+						                        Answer(answer: "", collectFlag: false),
+						                        Answer(answer: "", collectFlag: false)]
+					self.quizData?.addAnswersToQuiz(genreId: genre!.id, quizIndex: 0, answers: answers)
 				})
-			
 		case 8:
 			apiRepo.getMunicipalityFoundation(prefCode: 3, cityCode: city!.prefCode)
 		default:
@@ -56,6 +63,4 @@ class QuizRepository {
 		}
 		
 	}
-	
-	
 }
