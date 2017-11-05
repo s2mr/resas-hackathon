@@ -11,9 +11,13 @@ import Unbox
 
 class QuizRepository {
 	var quizData: QuizData?
+	var numberOfProblemsSolved:Int
+	var numberOfproblemsCorrected:Int
 	
 	init() {
 		let jsonStr = Utility.loadJson(name: "quiz")
+		numberOfProblemsSolved = 0
+		numberOfproblemsCorrected = 0
 		do {
 			quizData = try QuizData(unboxer: Unboxer(data: jsonStr.data(using: .utf8)!))
 		} catch {
@@ -26,6 +30,7 @@ class QuizRepository {
 			if let quizzes = quizData?.getQuizzes(by: userStatus.selectedGenre!.id)?.quizzes {
 				let quiz = quizzes[userStatus.quizIndex]
 				UserStatusRepository.shared.userStatus.quizIndex += 1
+				numberOfProblemsSolved += 1
 				return quiz
 			}
 		}
