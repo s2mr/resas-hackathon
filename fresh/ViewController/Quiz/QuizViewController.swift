@@ -33,14 +33,17 @@ class QuizViewController: UIViewController {
 		setupUI()
 	}
 	
-	@IBAction func choiceButtonTapped(_ sender: Any) {
-		viewWillAppear(true) //FIXME
+	@IBAction func choiceButtonTapped(_ sender: UIButton) {
+		UserStatusRepository.shared.userStatus.selectedAnswer = AnswerID(rawValue: sender.tag)
+		let vc = UIStoryboard(name: "AnswerViewController", bundle: nil).instantiateInitialViewController()!
+		self.navigationController?.pushViewController(vc, animated: true)
 	}
 }
 
 extension QuizViewController {
 	func setupUI() {
 		if let quiz = QuizRepository().next(userStatus: UserStatusRepository.shared.userStatus) {
+			UserStatusRepository.shared.userStatus.quiz = quiz
 			DispatchQueue.main.async {
 				self.questionTextView.text = quiz.question
 				
@@ -49,7 +52,9 @@ extension QuizViewController {
 				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
 				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
 			}
+		} else {
+			let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
+			self.navigationController?.pushViewController(vc, animated: true)
 		}
-		
 	}
 }

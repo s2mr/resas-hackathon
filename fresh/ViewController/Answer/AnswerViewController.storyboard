@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wWf-2X-Hsn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,9 +16,66 @@
                     <view key="view" contentMode="scaleToFill" id="BXg-Wc-WEu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j5v-a4-BBL">
+                                <rect key="frame" x="8" y="28" width="359" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gdi-UP-cug"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPG-p6-o8C">
+                                <rect key="frame" x="8" y="118" width="359" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sPj-wM-Irk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7E-eH-yxd">
+                                <rect key="frame" x="137.5" y="607" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Eie-07-EjM"/>
+                                    <constraint firstAttribute="width" constant="100" id="M0F-61-oRp"/>
+                                </constraints>
+                                <state key="normal" title="終了"/>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="Vyo-M2-Dt1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-7X-cFC">
+                                <rect key="frame" x="137" y="547" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ksm-Fi-ESr"/>
+                                    <constraint firstAttribute="height" constant="30" id="oh8-yX-pVP"/>
+                                </constraints>
+                                <state key="normal" title="次の問題"/>
+                                <connections>
+                                    <action selector="nextQuestionButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="8XG-4e-3Kr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j5v-a4-BBL" firstAttribute="leading" secondItem="LZM-MA-yL6" secondAttribute="leading" constant="8" id="3se-8F-Wrb"/>
+                            <constraint firstItem="Bs4-7X-cFC" firstAttribute="centerX" secondItem="BXg-Wc-WEu" secondAttribute="centerX" id="4zM-1j-NIx"/>
+                            <constraint firstItem="j5v-a4-BBL" firstAttribute="top" secondItem="LZM-MA-yL6" secondAttribute="top" constant="8" id="5Lr-ID-45w"/>
+                            <constraint firstItem="j7E-eH-yxd" firstAttribute="centerX" secondItem="BXg-Wc-WEu" secondAttribute="centerX" id="6MH-mx-KOR"/>
+                            <constraint firstItem="LZM-MA-yL6" firstAttribute="bottom" secondItem="j7E-eH-yxd" secondAttribute="bottom" constant="30" id="9IO-NC-aJY"/>
+                            <constraint firstItem="uPG-p6-o8C" firstAttribute="leading" secondItem="LZM-MA-yL6" secondAttribute="leading" constant="8" id="SbO-I4-hSV"/>
+                            <constraint firstItem="LZM-MA-yL6" firstAttribute="trailing" secondItem="j5v-a4-BBL" secondAttribute="trailing" constant="8" id="fKT-sW-vGs"/>
+                            <constraint firstItem="LZM-MA-yL6" firstAttribute="trailing" secondItem="uPG-p6-o8C" secondAttribute="trailing" constant="8" id="fxB-5A-wHe"/>
+                            <constraint firstItem="j7E-eH-yxd" firstAttribute="top" secondItem="Bs4-7X-cFC" secondAttribute="bottom" constant="30" id="muw-vs-caZ"/>
+                            <constraint firstItem="uPG-p6-o8C" firstAttribute="top" secondItem="j5v-a4-BBL" secondAttribute="bottom" constant="30" id="qXv-hB-fZL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LZM-MA-yL6"/>
                     </view>
+                    <connections>
+                        <outlet property="customView" destination="uPG-p6-o8C" id="Ux5-gu-ogM"/>
+                        <outlet property="questionTextView" destination="j5v-a4-BBL" id="oNt-YJ-yED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9a-hR-9Hv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
