@@ -22,6 +22,8 @@
 		2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */; };
 		2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */; };
 		2E347E971FAE1C7500907633 /* TourismForeignersForFromEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */; };
+		2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */; };
+		2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
 		6E3DFB291FAE0A2E004D4A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E975E8D1FAD863C0009F1F3 /* AppDelegate.swift */; };
 		6E3DFB2B1FAE0E46004D4A13 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3DFB2A1FAE0E46004D4A13 /* Quiz.swift */; };
@@ -94,6 +96,8 @@
 		2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalityFoundationEntity.swift; sourceTree = "<group>"; };
 		2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromRequest.swift; sourceTree = "<group>"; };
 		2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromEntity.swift; sourceTree = "<group>"; };
+		2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationRequest.swift; sourceTree = "<group>"; };
+		2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationEntity.swift; sourceTree = "<group>"; };
 		34F4CC94B1FF5F4904093E0F /* Pods-freshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5847A2480DC31544AF83807B /* Pods-freshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A08BCA0193B20874D9D4888 /* Pods-freshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freshTests/Pods-freshTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				2E347E901FAE175500907633 /* MunicipalityFoundationRequest.swift */,
 				2E347E8C1FAE0DFB00907633 /* IndustryPowerForIndustryRequest.swift */,
 				2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */,
+				2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */,
 			);
 			path = Requset;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */,
 				2E347E8E1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift */,
 				2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */,
+				2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -603,7 +609,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		26EBE451F17226F50C8372DA /* [CP] Embed Pods Frameworks */ = {
@@ -694,7 +700,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		84B48D2155F2C7BA64AECFDF /* [CP] Embed Pods Frameworks */ = {
@@ -727,7 +733,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -741,6 +747,7 @@
 				2E347E851FADEECF00907633 /* PopulationCompositionEntity.swift in Sources */,
 				6E3DFB2D1FAE10C0004D4A13 /* QuizRepository.swift in Sources */,
 				2E347E911FAE175500907633 /* MunicipalityFoundationRequest.swift in Sources */,
+				2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */,
 				2E347E831FADEB4700907633 /* PopulationCompositionRequest.swift in Sources */,
 				2E347E8F1FAE0EC100907633 /* IndustryPowerForIndustryEntity.swift in Sources */,
 				6E975ECF1FAD94AC0009F1F3 /* CityDataStore.swift in Sources */,
@@ -752,6 +759,7 @@
 				6EABAEAC1FADEFBA00B08F3E /* ProfileViewController.swift in Sources */,
 				6E975EC21FAD8C200009F1F3 /* QuizTopViewController.swift in Sources */,
 				2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */,
+				2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */,
 				2E347E891FADF4EB00907633 /* APIResult.swift in Sources */,
 				6EABAE8B1FADB25000B08F3E /* GenreViewController.swift in Sources */,
 				2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */,

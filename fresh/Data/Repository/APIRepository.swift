@@ -48,4 +48,12 @@ class APIRepository {
 //				print($0.debugDescription)
 //		}
 	}
+	func getPartnerDocomoDestination(year:Int, month:Int, periodOfDay:Int, periodOfTime:Int, gender:String, ageRange:String, prefCodeDestination:Int, cityCodeDestination:Int, prefCodeResidence:String, cityCodeResidence:String) -> Observable<PartnerDocomoDestinationEntity> {
+		return api.send(FreshAPI.PartnerDocomoDestinationRequest(year: year, month: month, periodOfDay: periodOfDay,periodOfTime: periodOfTime, gender: gender, ageRange: ageRange, prefCodeDestination: prefCodeDestination, cityCodeDestination: cityCodeDestination, prefCodeResidence: prefCodeResidence, cityCodeResidence: cityCodeResidence))
+		
+//		repo.getPartnerDocomoDestination(year: 2016, month: 01, periodOfDay: 1,periodOfTime: 4, gender: "1", ageRange: "15", prefCodeDestination: 13, cityCodeDestination: 13101, prefCodeResidence: "-", cityCodeResidence: "-")
+//			.subscribe {
+//				print($0.debugDescription)
+//		}
+	}
 }
