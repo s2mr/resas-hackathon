@@ -56,6 +56,5 @@ extension QuizViewController {
 			let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
 			self.navigationController?.pushViewController(vc, animated: true)
 		}
-		
 	}
 }

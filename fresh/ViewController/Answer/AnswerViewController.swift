@@ -42,7 +42,7 @@ class AnswerViewController: UIViewController {
 	}
 	
 	@IBAction func finishButtonTapped(_ sender: Any) {
-		let vc = UIStoryboard(name: "AnswerViewController", bundle: nil).instantiateInitialViewController()!
+		let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
 		self.navigationController?.pushViewController(vc, animated: true)
 	}
 }
