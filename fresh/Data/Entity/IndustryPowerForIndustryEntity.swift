@@ -10,7 +10,7 @@ import Foundation
 import Unbox
 
 public struct IndustryPowerForIndustryEntity : Unboxable {
-	let prefName: Int
+	let prefName: String
 	let prefCode: Int
 	let sicCode:String
 	let sicName:String

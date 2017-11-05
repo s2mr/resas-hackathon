@@ -11,7 +11,6 @@ import Unbox
 
 public struct TourismForeignersForFromEntity : Unboxable {
 	let year: Int
-	let quarter: Int
 	let prefCode: Int
 	let prefName: String
 	let purpose: String
@@ -19,7 +18,6 @@ public struct TourismForeignersForFromEntity : Unboxable {
 	
 	public init(unboxer: Unboxer) throws {
 		year = try unboxer.unbox(key: "year")
-		quarter = try unboxer.unbox(key: "quarter")
 		prefCode = try unboxer.unbox(key: "prefCode")
 		prefName = try unboxer.unbox(key: "prefName")
 		purpose = try unboxer.unbox(key: "purpose")
@@ -42,12 +40,12 @@ struct TourismForeignersForFroms: Unboxable {
 
 struct TourismForeigners: Unboxable {
 	var year: Int
-	var quater: Int
+	var quarter: Int
 	var value:Int
 	
 	init(unboxer: Unboxer) throws {
 		year = try unboxer.unbox(key: "year")
-		quater = try unboxer.unbox(key: "quater")
+		quarter = try unboxer.unbox(key: "quarter")
 		value = try unboxer.unbox(key: "value")
 	}
 }
