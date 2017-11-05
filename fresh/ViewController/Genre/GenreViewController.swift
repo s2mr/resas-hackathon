@@ -31,6 +31,17 @@ class GenreViewController: UIViewController {
 		self.title = UserStatusRepository.shared.userStatus.selectedCity?.name
 	}
 	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+	}
+	
+	@IBAction func toResultButtonTapped(_ sender: Any) {
+		let vc = UIStoryboard(name: "ResultViewController", bundle: nil).instantiateInitialViewController()!
+		
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	
 	
 	/*
 	// MARK: - Navigation

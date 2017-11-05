@@ -10,10 +10,10 @@ import Foundation
 import Unbox
 
 enum AnswerID: Int {
-	case A = 1
-	case B = 2
-	case C = 3
-	case D = 4
+	case A = 0
+	case B = 1
+	case C = 2
+	case D = 3
 }
 
 struct QuizData: Unboxable {
@@ -50,6 +50,16 @@ struct Quiz: Unboxable {
 	init(unboxer: Unboxer) throws {
 		question = try unboxer.unbox(key: "question")
 		answers = try unboxer.unbox(key: "answers")
+	}
+	
+	func collectAnswer() -> Answer {
+		var answer: Answer!
+		for a in answers {
+			if a.collectFlag {
+				answer = a
+			}
+		}
+		return answer
 	}
 }
 

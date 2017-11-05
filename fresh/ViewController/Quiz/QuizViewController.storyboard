@@ -37,13 +37,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXt-d1-IpO">
-                                <rect key="frame" x="31" y="124" width="336" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="choiceButtonTapped:" destination="XZC-bH-n6w" eventType="touchUpInside" id="aac-7c-fIM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT0-Sv-Ik3">
                                 <rect key="frame" x="8" y="167" width="15" height="21"/>
                                 <constraints>
@@ -54,7 +47,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-32-ZlP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-32-ZlP">
                                 <rect key="frame" x="31" y="162" width="336" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -80,18 +73,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbU-i0-U1R">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbU-i0-U1R">
                                 <rect key="frame" x="31" y="86" width="336" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="choiceButtonTapped:" destination="XZC-bH-n6w" eventType="touchUpInside" id="Kes-di-AkS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yp-nn-TOR">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yp-nn-TOR">
                                 <rect key="frame" x="31" y="200" width="336" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="choiceButtonTapped:" destination="XZC-bH-n6w" eventType="touchUpInside" id="FGf-Dk-dbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXt-d1-IpO">
+                                <rect key="frame" x="31" y="124" width="336" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="choiceButtonTapped:" destination="XZC-bH-n6w" eventType="touchUpInside" id="aac-7c-fIM"/>
                                 </connections>
                             </button>
                         </subviews>
