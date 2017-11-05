@@ -7,12 +7,43 @@
 //
 
 import UIKit
+import Alamofire
 
 class ResultViewController: UIViewController {
-
+	
+	
+	@IBOutlet weak var imageView: UIImageView!
+	@IBOutlet weak var progressLabel: UILabel!
+	@IBOutlet weak var progressView: UIProgressView!
+	
+	
+	@IBOutlet weak var levelValueLabel: UILabel!
+	@IBOutlet weak var levelProgressView: UIProgressView!
+	@IBOutlet weak var levelProgressValueLabel: UILabel!
+	
+	@IBOutlet weak var correctCountLabel: UILabel!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		self.navigationItem.title = "集計"
+		
+		// 正解数
+		correctCountLabel.text = "\(Int(2)) / \(Int(3))"
+		
+		// 市ごとの進捗度
+		progressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
+		progressView.setProgress(0.5, animated: true)
+		progressLabel.text = "\(Int(progressView.progress * 100))%"
+		
+		// レベル
+		let level:Int = UserStatusRepository.shared.userStatus.level
+		let exp:Int = UserStatusRepository.shared.userStatus.exp
+		let nextLevelExp = UserStatusRepository.shared.userStatus.getNextLevelExp()
+		levelValueLabel.text = "\(level)"
+		levelProgressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
+		levelProgressView.setProgress(Float(exp / nextLevelExp), animated: true)
+		levelProgressValueLabel.text = "\(Int(levelProgressView.progress * 100))/\(Int(nextLevelExp))"
+		
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +51,13 @@ class ResultViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+	
+	@IBAction func toQuizTopButtonTapped(_ sender: Any) {
+		let vc = UIStoryboard(name: "QuizTopViewController", bundle: nil).instantiateInitialViewController()!
+		
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
     /*
     // MARK: - Navigation
 
