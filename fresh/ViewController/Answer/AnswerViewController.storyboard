@@ -16,7 +16,6 @@
                     <view key="view" contentMode="scaleToFill" id="BXg-Wc-WEu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.3387584253" green="0.70074068010000001" blue="0.82597216039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j5v-a4-BBL">
                                 <rect key="frame" x="8" y="28" width="359" height="60"/>
@@ -35,8 +34,23 @@
                                     <constraint firstAttribute="height" constant="200" id="sPj-wM-Irk"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7E-eH-yxd">
-                                <rect key="frame" x="137.5" y="607" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-7X-cFC">
+                                <rect key="frame" x="137" y="494" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ksm-Fi-ESr"/>
+                                    <constraint firstAttribute="height" constant="30" id="oh8-yX-pVP"/>
+                                </constraints>
+                                <state key="normal" title="次の問題">
+                                    <color key="titleColor" red="0.015686274509803921" green="0.15294117647058825" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="8XG-4e-3Kr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7E-eH-yxd">
+                                <rect key="frame" x="137" y="572" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Eie-07-EjM"/>
                                     <constraint firstAttribute="width" constant="100" id="M0F-61-oRp"/>
@@ -46,19 +60,8 @@
                                     <action selector="finishButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="Vyo-M2-Dt1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-7X-cFC">
-                                <rect key="frame" x="137" y="547" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ksm-Fi-ESr"/>
-                                    <constraint firstAttribute="height" constant="30" id="oh8-yX-pVP"/>
-                                </constraints>
-                                <state key="normal" title="次の問題"/>
-                                <connections>
-                                    <action selector="nextQuestionButtonTapped:" destination="wWf-2X-Hsn" eventType="touchUpInside" id="8XG-4e-3Kr"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3387584253" green="0.70074068010000001" blue="0.82597216039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="j5v-a4-BBL" firstAttribute="leading" secondItem="LZM-MA-yL6" secondAttribute="leading" constant="8" id="3se-8F-Wrb"/>
                             <constraint firstItem="Bs4-7X-cFC" firstAttribute="centerX" secondItem="BXg-Wc-WEu" secondAttribute="centerX" id="4zM-1j-NIx"/>
