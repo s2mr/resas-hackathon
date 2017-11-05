@@ -27,8 +27,12 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 		self.navigationItem.title = "集計"
 		
+//		let quizCount = QuizRepository().quizData?.quizzes.count
+		let _numberOfProblemsSolved = UserStatusRepository.shared.userStatus.numberOfProblemsSolved // 解いた問題数
+		let _numberOfproblemsCorrected = UserStatusRepository.shared.userStatus.numberOfproblemsCorrected // 正解した問題数
+		
 		// 正解数
-		correctCountLabel.text = "\(Int(2)) / \(Int(3))"
+		correctCountLabel.text = "\(_numberOfproblemsCorrected) / \(_numberOfProblemsSolved)"
 		
 		// 市ごとの進捗度
 		progressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
@@ -41,8 +45,8 @@ class ResultViewController: UIViewController {
 		let nextLevelExp = UserStatusRepository.shared.userStatus.getNextLevelExp()
 		levelValueLabel.text = "\(level)"
 		levelProgressView.transform = CGAffineTransform(scaleX: 1.0, y: 10.0)
-		levelProgressView.setProgress(Float(exp / nextLevelExp), animated: true)
-		levelProgressValueLabel.text = "\(Int(levelProgressView.progress * 100))/\(Int(nextLevelExp))"
+		levelProgressView.setProgress(Float(Float(exp) / Float(nextLevelExp)), animated: true)
+		levelProgressValueLabel.text = "\(Int(Float(levelProgressView.progress) * Float(nextLevelExp)))/\(Int(nextLevelExp))"
 		
         // Do any additional setup after loading the view.
     }
