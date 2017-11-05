@@ -21,7 +21,7 @@ extension FreshAPIRespondable {
         return "result"
     }
     
-    fileprivate func validateResponse(_ json: Any?) throws -> UnboxableDictionary {
+    func validateResponse(_ json: Any?) throws -> UnboxableDictionary {
         guard let json = json as? UnboxableDictionary else {
             throw UnboxError.invalidData
         }

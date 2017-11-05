@@ -22,12 +22,10 @@
 		2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */; };
 		2E347E951FAE1BB700907633 /* TourismForeignersForFromRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */; };
 		2E347E971FAE1C7500907633 /* TourismForeignersForFromEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */; };
-		2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */; };
-		2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */; };
-		2E59BB161FAE2D9B0011E595 /* PopulationSumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */; };
-		2E59BB181FAE2E0B0011E595 /* PopulationSumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */; };
 		2E557FF51FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF41FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift */; };
 		2E557FF71FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF61FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift */; };
+		2E557FF91FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */; };
+		2E557FFB1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */; };
 		2E59BB161FAE2D9B0011E595 /* PopulationSumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */; };
 		2E59BB181FAE2E0B0011E595 /* PopulationSumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */; };
 		3457C5408C78B4EC1693D14A /* Pods_freshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B932D5D9B20C53E0A6DDC /* Pods_freshUITests.framework */; };
@@ -69,6 +67,7 @@
 		6EABAEAA1FADEFAF00B08F3E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAEA91FADEFAF00B08F3E /* ResultViewController.swift */; };
 		6EABAEAC1FADEFBA00B08F3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EABAEAB1FADEFBA00B08F3E /* ProfileViewController.swift */; };
 		6EABAEAF1FADEFC600B08F3E /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EABAEAE1FADEFC600B08F3E /* ProfileViewController.storyboard */; };
+		6EEFFC6D1FAED90B00F890B8 /* CityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEFFC6C1FAED90B00F890B8 /* CityEntity.swift */; };
 		8B9488C07F00FA50AEDDF066 /* Pods_fresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C27BF80E3658492E920AFE /* Pods_fresh.framework */; };
 		A4E8BE526C275688EECA56BA /* Pods_freshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38D0942EF9CC55D5409337C /* Pods_freshTests.framework */; };
 /* End PBXBuildFile section */
@@ -107,12 +106,10 @@
 		2E347E921FAE17FC00907633 /* MunicipalityFoundationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalityFoundationEntity.swift; sourceTree = "<group>"; };
 		2E347E941FAE1BB700907633 /* TourismForeignersForFromRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromRequest.swift; sourceTree = "<group>"; };
 		2E347E961FAE1C7500907633 /* TourismForeignersForFromEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismForeignersForFromEntity.swift; sourceTree = "<group>"; };
-		2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationRequest.swift; sourceTree = "<group>"; };
-		2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationEntity.swift; sourceTree = "<group>"; };
-		2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumRequest.swift; sourceTree = "<group>"; };
-		2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumEntity.swift; sourceTree = "<group>"; };
 		2E557FF41FAE3D7500B0F019 /* ForestryIncomeForContractRevenueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestryIncomeForContractRevenueRequest.swift; sourceTree = "<group>"; };
 		2E557FF61FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestryIncomeForContractRevenueEntity.swift; sourceTree = "<group>"; };
+		2E557FF81FAE417600B0F019 /* PartnerDocomoDestinationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationRequest.swift; sourceTree = "<group>"; };
+		2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDocomoDestinationEntity.swift; sourceTree = "<group>"; };
 		2E59BB151FAE2D9B0011E595 /* PopulationSumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumRequest.swift; sourceTree = "<group>"; };
 		2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationSumEntity.swift; sourceTree = "<group>"; };
 		34F4CC94B1FF5F4904093E0F /* Pods-freshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +159,7 @@
 		6EABAEA91FADEFAF00B08F3E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6EABAEAB1FADEFBA00B08F3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6EABAEAE1FADEFC600B08F3E /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		6EEFFC6C1FAED90B00F890B8 /* CityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEntity.swift; sourceTree = "<group>"; };
 		9405081321D45A6BE03A62E6 /* Pods-fresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fresh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fresh/Pods-fresh.debug.xcconfig"; sourceTree = "<group>"; };
 		AB2412E92778A14C5B2E1B74 /* Pods-freshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freshUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-freshUITests/Pods-freshUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BFDE5B06F58B88EE7E2A6810 /* Pods-fresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fresh.release.xcconfig"; path = "Pods/Target Support Files/Pods-fresh/Pods-fresh.release.xcconfig"; sourceTree = "<group>"; };
@@ -410,6 +408,7 @@
 				2E557FFA1FAE430100B0F019 /* PartnerDocomoDestinationEntity.swift */,
 				2E59BB171FAE2E0B0011E595 /* PopulationSumEntity.swift */,
 				2E557FF61FAE3DD100B0F019 /* ForestryIncomeForContractRevenueEntity.swift */,
+				6EEFFC6C1FAED90B00F890B8 /* CityEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -817,6 +816,7 @@
 				6EABAE941FADD9EA00B08F3E /* Genre.swift in Sources */,
 				6EABAE851FADA6DB00B08F3E /* City.swift in Sources */,
 				6EABAEAC1FADEFBA00B08F3E /* ProfileViewController.swift in Sources */,
+				6EEFFC6D1FAED90B00F890B8 /* CityEntity.swift in Sources */,
 				6E975EC21FAD8C200009F1F3 /* QuizTopViewController.swift in Sources */,
 				2E347E931FAE17FC00907633 /* MunicipalityFoundationEntity.swift in Sources */,
 				6E1FF45C1FAEACB900008B01 /* WrongAnswerView.swift in Sources */,

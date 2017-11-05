@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import Unbox
 
 public extension FreshAPI {
     struct CitiesRequest {
@@ -16,7 +17,7 @@ public extension FreshAPI {
 }
 
 extension FreshAPI.CitiesRequest: FreshAPIRequest {
-    typealias Response = Cities
+    typealias Response = CitiesEntity
     
     var path: String {
         return "/cities"
@@ -33,4 +34,9 @@ extension FreshAPI.CitiesRequest: FreshAPIRequest {
     var parameters: Parameters? {
         return ["prefCode": prefCode]
     }
+	
+	func response(from json: Any?) throws -> Response {
+		let json = try validateResponse(json)
+		return try unbox(dictionary: json)
+	}
 }
