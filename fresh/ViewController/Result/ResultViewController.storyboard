@@ -16,6 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="VwL-v1-t0d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.3387584253" green="0.70074068010000001" blue="0.82597216039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJ8-PD-v7Q">
                                 <rect key="frame" x="130" y="603" width="92" height="30"/>
