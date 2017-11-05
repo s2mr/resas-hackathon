@@ -8,12 +8,9 @@
 
 import UIKit
 
-let BUTTON_TAG_A = 1
-let BUTTON_TAG_B = 2
-let BUTTON_TAG_C = 3
-let BUTTON_TAG_D = 4
-
 class QuizViewController: UIViewController {
+	
+	@IBOutlet weak var questionTextView: UITextView!
 	
 	@IBOutlet weak var choiceButtonA : UIButton!
 	@IBOutlet weak var choiceButtonB : UIButton!
@@ -30,12 +27,29 @@ class QuizViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	@IBAction func choiceButtonTapped(_ sender: Any) {
-		
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.title = UserStatusRepository.shared.userStatus.selectedGenre?.name
+		setupUI()
 	}
 	
+	@IBAction func choiceButtonTapped(_ sender: Any) {
+		viewWillAppear(true) //FIXME
+	}
 }
 
 extension QuizViewController {
-	
+	func setupUI() {
+		if let quiz = QuizRepository().next(userStatus: UserStatusRepository.shared.userStatus) {
+			DispatchQueue.main.async {
+				self.questionTextView.text = quiz.question
+				
+				self.choiceButtonA.setTitle(quiz.answers[0].answer, for: .normal)
+				self.choiceButtonB.setTitle(quiz.answers[1].answer, for: .normal)
+				self.choiceButtonC.setTitle(quiz.answers[2].answer, for: .normal)
+				self.choiceButtonD.setTitle(quiz.answers[3].answer, for: .normal)
+			}
+		}
+		
+	}
 }

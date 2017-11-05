@@ -55,6 +55,7 @@ extension QuizTopViewController: UITableViewDataSource {
 
 extension QuizTopViewController: UITableViewDelegate {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		UserStatusRepository.shared.userStatus.selectedCity = cities[indexPath.row]
 		let vc = UIStoryboard(name: "GenreViewController", bundle: nil).instantiateInitialViewController() as! GenreViewController
 		self.navigationController?.pushViewController(vc, animated: true)
 	}

@@ -1,20 +1,24 @@
 {
 	"genres":[
 			  {
+			  "id": 1,
 			  "name":"人口",
 			  "file-name": "jinko"
 			  },
 			  {
+			  "id": 2,
 			  "name":"山",
 			  "file-name": "yama"
 			  },
 			  {
+			  "id": 3,
 			  "name":"まちづくり",
 			  "file-name": "machidukuri"
 			  },
 			  {
+			  "id": 4,
 			  "name":"地方財政",
 			  "file-name": "chihozaisei"
-			  },
+			  }
 			  ]
 }

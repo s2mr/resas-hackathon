@@ -128,6 +128,7 @@
                         <outlet property="choiceButtonB" destination="wXt-d1-IpO" id="128-t4-tTZ"/>
                         <outlet property="choiceButtonC" destination="i4M-32-ZlP" id="Omr-2h-kQM"/>
                         <outlet property="choiceButtonD" destination="6Yp-nn-TOR" id="Kqn-Ie-yGi"/>
+                        <outlet property="questionTextView" destination="1N4-3q-Jah" id="ZZi-As-Bph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1H-ix-YPa" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,10 +20,12 @@ struct Genres: Unboxable {
 struct Genre: Unboxable {
 	var name: String
 	private var fileName: String
+	var id: Int
 	
 	init(unboxer: Unboxer) throws {
 		name = try unboxer.unbox(key: "name")
 		fileName = try unboxer.unbox(key: "file-name")
+		id = try unboxer.unbox(key: "id")
 	}
 	
 	func getImageName() -> String {
