@@ -12,6 +12,9 @@ class AnswerViewController: UIViewController {
 	@IBOutlet weak var questionTextView: UITextView!
 	@IBOutlet weak var customView: UIView!
 	
+	var quiz: Quiz?
+	var selectedAnswer: AnswerID?
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -25,12 +28,12 @@ class AnswerViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		setupUI()
+		setup()
 	}
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
-		cleanUI()
+		clean()
 	}
 	
 	@IBAction func nextQuestionButtonTapped(_ sender: Any) {
@@ -45,11 +48,27 @@ class AnswerViewController: UIViewController {
 }
 
 extension AnswerViewController {
-	func setupUI() {
-		self.questionTextView.text = UserStatusRepository.shared.userStatus.quiz?.question
+	func setup() {
+		quiz = UserStatusRepository.shared.userStatus.quiz
+		selectedAnswer = UserStatusRepository.shared.userStatus.selectedAnswer
+		
+		self.questionTextView.text = quiz?.question
+		
+		if quiz!.answers[selectedAnswer!.rawValue].collectFlag {
+			//正解の場合
+			let view = CollectAnswerView(frame: self.customView.frame)
+			view.collectAnswerLabel.text = quiz?.collectAnswer().answer
+			self.customView.addSubview(view)
+		} else {
+			//不正解の場合
+			let view = WrongAnswerView(frame: self.customView.frame)
+			view.collectAnswerLabel.text = quiz?.collectAnswer().answer
+			view.selectedAnswerLabel.text = quiz?.answers[selectedAnswer!.rawValue].answer
+			self.customView.addSubview(view)
+		}
 	}
 	
-	func cleanUI() {
+	func clean() {
 		
 	}
 }
