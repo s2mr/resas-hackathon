@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class QuizTopViewController: UIViewController {
 	
-	var cityRepo: CityRepository?
-	var cities: [City] = []
+	var apiRepo: APIRepository?
+	var cities: [CityEntity] = []
+	var disposeBag = DisposeBag()
 	
 	@IBOutlet weak var tableView: UITableView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		cityRepo = CityRepository()
-		cities = (cityRepo?.getCities().cities)!
+		apiRepo = APIRepository()
+		apiRepo?.api.send(FreshAPI.CitiesRequest(prefCode: 3))
+			.subscribe(onNext: {  c in
+				self.setCities(citiesEntity: c)
+			})
+			.disposed(by: disposeBag)
 		// Do any additional setup after loading the view.
 	}
 	
@@ -27,6 +33,10 @@ class QuizTopViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
+	func setCities(citiesEntity: CitiesEntity) {
+		 self.cities = citiesEntity.cities
+		tableView.reloadData()
+	}
 	
 	/*
 	// MARK: - Navigation
@@ -47,7 +57,7 @@ extension QuizTopViewController: UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
-		cell.textLabel?.text = cities[indexPath.row].name
+		cell.textLabel?.text = cities[indexPath.row].cityName
 		
 		return cell
 	}

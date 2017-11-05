@@ -28,7 +28,7 @@ class GenreViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		self.title = UserStatusRepository.shared.userStatus.selectedCity?.name
+		self.title = UserStatusRepository.shared.userStatus.selectedCity?.cityName
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {

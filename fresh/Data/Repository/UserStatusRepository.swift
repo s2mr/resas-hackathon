@@ -19,7 +19,7 @@ class UserStatusRepository {
 }
 
 struct UserStatus{
-	var selectedCity: City?
+	var selectedCity: CityEntity?
 	var selectedGenre: Genre?
 	var selectedAnswer: AnswerID?
 	var quizIndex: Int = 0
