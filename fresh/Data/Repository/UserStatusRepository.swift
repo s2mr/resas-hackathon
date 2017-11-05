@@ -8,7 +8,7 @@
 
 import Foundation
 
-public let MAX_QUIZ_COUNT = 2
+public let MAX_QUIZ_COUNT = 5
 
 class UserStatusRepository {
 	var userStatus = UserStatus()

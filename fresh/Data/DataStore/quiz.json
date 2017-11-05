@@ -2,88 +2,826 @@
 	"datas": [{
 		  "genreId": 1,
 		  "problems": [{
-					   "question": "q1",
+					   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
 					   "answers": [{
-								   "answer": "q1a1",
+								   "answer": "50,370",
 								   "collectFlag": true
 								   },
 								   {
-								   "answer": "a2",
+								   "answer": "45,435",
 								   "collectFlag": false
 								   },
 								   {
-								   "answer": "a3",
+								   "answer": "98,134",
 								   "collectFlag": false
 								   },
 								   {
-								   "answer": "a4",
+								   "answer": "12500",
 								   "collectFlag": false
 								   }
 								   ]
 					   },
 					   {
-					   "question": "q2",
+					   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
 					   "answers": [{
-								   "answer": "q2a1",
+								   "answer": "-2.83%",
 								   "collectFlag": true
 								   },
 								   {
-								   "answer": "a2",
+								   "answer": "3.435%",
 								   "collectFlag": false
 								   },
 								   {
-								   "answer": "a3",
+								   "answer": "0.29%",
 								   "collectFlag": false
 								   },
 								   {
-								   "answer": "a4",
+								   "answer": "30.83%",
 								   "collectFlag": false
+								   }
+								   ]
+					   },
+					   {
+					   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+					   "answers": [{
+								   "answer": "-3.30",
+								   "collectFlag": true
+								   },
+								   {
+								   "answer": "-1.42",
+								   "collectFlag": true
+								   },
+								   {
+								   "answer": "-23%",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "4.84%",
+								   "collectFlag": false
+								   }
+								   ]
+					   },
+					   {
+					   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+					   "answers": [{
+								   "answer": "49.95%",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "0%",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "23.32%",
+								   "collectFlag": true
+								   },
+								   {
+								   "answer": "98.2%",
+								   "collectFlag": false
+								   }
+								   ]
+					   },
+					   {
+					   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+					   "answers": [{
+								   "answer": "0~3歳",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "10~14歳",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "20~24歳",
+								   "collectFlag": false
+								   },
+								   {
+								   "answer": "30~34歳",
+								   "collectFlag": true
 								   }
 								   ]
 					   }
 					   ]
 		  }, {
 		  "genreId": 2,
-		  "problems": [{
-					   "question": "q1",
-					   "answers": [{
-								   "answer": "a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   },
-					   {
-					   "question": "q2",
-					   "answers": [{
-								   "answer": "a1",
-								   "collectFlag": true
-								   },
-								   {
-								   "answer": "a2",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a3",
-								   "collectFlag": false
-								   },
-								   {
-								   "answer": "a4",
-								   "collectFlag": false
-								   }
-								   ]
-					   }
-					   ]
-		  }]
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 3,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 4,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 5,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 6,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 7,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }, {
+			  "genreId": 8,
+			  "problems": [{
+						   "question": "2015年現在の人口は（）ですが、2040年においての滝沢市の推計人口は何人と予測されているか？",
+						   "answers": [{
+									   "answer": "50,370",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "45,435",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "98,134",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "12500",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０１５年現在の生産人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-2.83%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "3.435%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0.29%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30.83%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "滝沢市の２０３０年の総人口の増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "-3.30",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-1.42",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "-23%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "4.84%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1990年における滝沢市の人口増減率は何％でしょうか？",
+						   "answers": [{
+									   "answer": "49.95%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "0%",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "23.32%",
+									   "collectFlag": true
+									   },
+									   {
+									   "answer": "98.2%",
+									   "collectFlag": false
+									   }
+									   ]
+						   },
+						   {
+						   "question": "1980年代滝沢市の人口ピラミッドでは何歳〜何歳までの人口が一番多かったでしょうか？",
+						   "answers": [{
+									   "answer": "0~3歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "10~14歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "20~24歳",
+									   "collectFlag": false
+									   },
+									   {
+									   "answer": "30~34歳",
+									   "collectFlag": true
+									   }
+									   ]
+						   }
+						   ]
+			  }]
 }
