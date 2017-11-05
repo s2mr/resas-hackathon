@@ -31,6 +31,10 @@ class GenreViewController: UIViewController {
 		self.title = UserStatusRepository.shared.userStatus.selectedCity?.name
 	}
 	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+	}
+	
 	
 	/*
 	// MARK: - Navigation

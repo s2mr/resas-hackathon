@@ -9,6 +9,8 @@
 import UIKit
 
 class AnswerViewController: UIViewController {
+	@IBOutlet weak var questionTextView: UITextView!
+	@IBOutlet weak var customView: UIView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -21,15 +23,33 @@ class AnswerViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-	// Get the new view controller using segue.destinationViewController.
-	// Pass the selected object to the new view controller.
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		setupUI()
 	}
-	*/
 	
+	override func viewDidDisappear(_ animated: Bool) {
+		super.viewDidDisappear(animated)
+		cleanUI()
+	}
+	
+	@IBAction func nextQuestionButtonTapped(_ sender: Any) {
+		let vc = UIStoryboard(name: "QuizViewController", bundle: nil).instantiateInitialViewController()!
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	@IBAction func finishButtonTapped(_ sender: Any) {
+		let vc = UIStoryboard(name: "AnswerViewController", bundle: nil).instantiateInitialViewController()!
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+}
+
+extension AnswerViewController {
+	func setupUI() {
+		self.questionTextView.text = UserStatusRepository.shared.userStatus.quiz?.question
+	}
+	
+	func cleanUI() {
+		
+	}
 }
