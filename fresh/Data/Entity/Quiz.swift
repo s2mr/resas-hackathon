@@ -9,11 +9,27 @@
 import Foundation
 import Unbox
 
+enum AnswerID: Int {
+	case A = 1
+	case B = 2
+	case C = 3
+	case D = 4
+}
+
 struct QuizData: Unboxable {
 	var quizzes: [Quizzes]
 	
 	init(unboxer: Unboxer) throws {
 		quizzes = try unboxer.unbox(keyPath: "datas")
+	}
+	
+	func getQuizzes(by genreId: Int) -> Quizzes? {
+		for quiz in quizzes {
+			if quiz.genreId == genreId {
+				return quiz
+			}
+		}
+		return nil
 	}
 }
 

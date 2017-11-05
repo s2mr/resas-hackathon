@@ -26,6 +26,11 @@ class GenreViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.title = UserStatusRepository.shared.userStatus.selectedCity?.name
+	}
+	
 	
 	/*
 	// MARK: - Navigation
@@ -48,6 +53,16 @@ extension GenreViewController: UICollectionViewDataSource {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return genres.count
+	}
+}
+
+extension GenreViewController: UICollectionViewDelegate {
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let genre = genres[indexPath.row]
+		UserStatusRepository.shared.userStatus.selectedGenre = genre
+		let vc = UIStoryboard(name: "QuizViewController", bundle: nil).instantiateInitialViewController()!
+		self.navigationController?.pushViewController(vc, animated: true)
 	}
 }
 

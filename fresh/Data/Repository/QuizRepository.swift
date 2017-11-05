@@ -10,7 +10,6 @@ import Foundation
 import Unbox
 
 class QuizRepository {
-	
 	var quizData: QuizData?
 	
 	init() {
@@ -22,8 +21,15 @@ class QuizRepository {
 		}
 	}
 	
-	func getQuiz(by genreId: Int) -> QuizData? {
+	func next(userStatus: UserStatus) -> Quiz? {
+		if userStatus.quizIndex < MAX_QUIZ_COUNT {
+			if let quizzes = quizData?.getQuizzes(by: userStatus.selectedGenre!.id)?.quizzes {
+				let quiz = quizzes[userStatus.quizIndex]
+				UserStatusRepository.shared.userStatus.quizIndex += 1
+				return quiz
+			}
+		}
 		
-		return quizData
+		return nil
 	}
 }
